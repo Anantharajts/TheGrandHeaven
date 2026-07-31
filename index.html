@@ -48,6 +48,289 @@
         h5 {
             font-family: 'Karla-Regular' !important;
         }
+
+
+        /*-------------------------------------*/
+
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        } */
+
+        .slider_1 {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #f5f5f5; */
+            overflow: hidden;
+        }
+
+        .about-title {
+            font-size: 7.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            white-space: nowrap;
+            font-family: "Arial Black", "Arial Bold", Arial, sans-serif;
+            background: linear-gradient(to bottom,
+                    rgb(8 42 123 / 35%) 30%,
+                    rgb(255 255 255 / 0%) 76%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 1200px;
+            height: 450px;
+            position: relative;
+            perspective: 1000px;
+            margin-top: 80px;
+        }
+
+        .carousel-track {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .card {
+            position: absolute;
+            width: 300px;
+            height: 450px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .card.center {
+            z-index: 10;
+            transform: scale(1.1) translateZ(0);
+        }
+
+        .card.center img {
+            filter: none;
+        }
+
+        .card.left-2 {
+            z-index: 1;
+            transform: translateX(-400px) scale(0.8) translateZ(-300px);
+            opacity: 0.7;
+        }
+
+        .card.left-2 img {
+            filter: grayscale(100%);
+        }
+
+        .card.left-1 {
+            z-index: 5;
+            transform: translateX(-200px) scale(0.9) translateZ(-100px);
+            opacity: 0.9;
+        }
+
+        .card.left-1 img {
+            filter: grayscale(100%);
+        }
+
+        .card.right-1 {
+            z-index: 5;
+            transform: translateX(200px) scale(0.9) translateZ(-100px);
+            opacity: 0.9;
+        }
+
+        .card.right-1 img {
+            filter: grayscale(100%);
+        }
+
+        .card.right-2 {
+            z-index: 1;
+            transform: translateX(400px) scale(0.8) translateZ(-300px);
+            opacity: 0.7;
+        }
+
+        .card.right-2 img {
+            filter: grayscale(100%);
+        }
+
+        .card.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .member-info {
+            text-align: center;
+            margin-top: 40px;
+            transition: all 0.5s ease-out;
+        }
+
+        .member-name {
+            color: rgb(8, 42, 123);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .member-name::before,
+        .member-name::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            width: 100px;
+            height: 2px;
+            background: rgb(8, 42, 123);
+        }
+
+        .member-name::before {
+            left: -120px;
+        }
+
+        .member-name::after {
+            right: -120px;
+        }
+
+        .member-role {
+            color: #848696;
+            font-size: 1.5rem;
+            font-weight: 500;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 10px 0;
+            margin-top: -15px;
+            position: relative;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 60px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(8, 42, 123, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: rgb(0, 0, 0);
+            transform: scale(1.2);
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 20;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+            border: none;
+            outline: none;
+            padding-bottom: 4px;
+        }
+
+        .nav-arrow:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .nav-arrow.left {
+            left: 20px;
+            padding-right: 3px;
+        }
+
+        .nav-arrow.right {
+            right: 20px;
+            padding-left: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .about-title {
+                font-size: 4.5rem;
+            }
+
+            .card {
+                width: 200px;
+                height: 280px;
+            }
+
+            .card.left-2 {
+                transform: translateX(-250px) scale(0.8) translateZ(-300px);
+            }
+
+            .card.left-1 {
+                transform: translateX(-120px) scale(0.9) translateZ(-100px);
+            }
+
+            .card.right-1 {
+                transform: translateX(120px) scale(0.9) translateZ(-100px);
+            }
+
+            .card.right-2 {
+                transform: translateX(250px) scale(0.8) translateZ(-300px);
+            }
+
+            .member-name {
+                font-size: 2rem;
+            }
+
+            .member-role {
+                font-size: 1.2rem;
+            }
+
+            .member-name::before,
+            .member-name::after {
+                width: 50px;
+            }
+
+            .member-name::before {
+                left: -70px;
+            }
+
+            .member-name::after {
+                right: -70px;
+            }
+        }
     </style>
 
 </head>
@@ -119,20 +402,19 @@
         </div>
 
         <!--[banner]........-->
-        <div class="container" style="padding-top:10%;">
+        <div class="container" style="padding-top:7%;">
             <div class="row banner" style="justify-content: center;align-items:center;">
                 <div class="col row text_area1"
                     style="justify-content: center;align-items:center;flex-direction: column;">
                     <div class="col">
-                        <h1 class="text_1" style="font-size:55pt;text-align: center;">Enjoy Your Dream Vacation</h1>
-                    </div>
-                    <div class="col">
-                        <p style="float: right;padding-top:10px;">Relax in beautifully designed rooms, enjoy world-class
+                        <h1 class="text_1" style="font-size:44px;width: 776px;">Enjoy Your Dream Vacation</h1>
+                        <p style="padding-top:10px;font-size:18px;width:520px;">Relax in beautifully designed rooms,
+                            enjoy world-class
                             amenities, and experience warm hospitality tailored just for you.</p>
-                    </div>
-                    <div class="col" style="text-align:center;padding-right:150px;"><button
+                        <button
                             style="border: none;padding:7px 25px 7px 25px;background-color: black;color: white;border-radius: 20px;">BOOK
-                            NOW</button></div>
+                            NOW</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -534,7 +816,8 @@
 
         <div class="row">
 
-            <div class="col img_area_2"><img src="assets/IMG/PNG/SE4_GALLERY.png" style="height: 500px;width: 90%;"></div>
+            <div class="col img_area_2"><img src="assets/IMG/PNG/SE4_GALLERY.png" style="height: 500px;width: 90%;">
+            </div>
 
             <div class="col text_area_2">
                 <div class="col">
@@ -627,12 +910,645 @@
     </div>
 
 
+    <!--[SECTION-5]...................-->
+
+    <div class="container-fluid" style="background-color:#F1EDE6;height:720px;margin-bottom:85px;">
+
+        <div class="container" style="padding-top: 50px;">
+
+            <!--[subheading]...............-->
+            <h5 style="padding-bottom:0px;">Customer Services</h5>
+            <span
+                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+            <!--[subheading]...............-->
+
+            <h2>Book Your Stay and Relax in a Luxury Hotel</h2>
+            <p>Relax in comfort and enjoy exceptional hospitality. Reserve your stay today and make every moment
+                unforgettable.</p>
+
+
+            <div class="row" style="gap: 36px;justify-content: center;align-items: center;">
+
+
+                <div class="col">
+                    <div class="col row"
+                        style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top: 15px;padding-bottom: 15px;">
+                        <div class="col"><img src="assets/IMG/PNG/SE5_1.png" style="width: 100%;"></div>
+
+                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Deluxe Suite</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            </div>
+                            <div class="col">
+                                <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
+                            </div>
+                        </div>
+
+                        <div class="col"><button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;width: 100%;">VIEW
+                                DETAILS</button></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="col row"
+                        style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top:15px;padding-bottom: 15px;">
+                        <div class="col"><img src="assets/IMG/PNG/SE5_2.png" style="width: 100%;"></div>
+
+                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Premium Suite</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            </div>
+                            <div class="col">
+                                <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
+                            </div>
+                        </div>
+
+                        <div class="col"><button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;width: 100%;">VIEW
+                                DETAILS</button></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="col row"
+                        style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top: 15px;padding-bottom: 15px;">
+                        <div class="col"><img src="assets/IMG/PNG/SE5_3.png" style="width: 100%;"></div>
+
+                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Royal Suite</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            </div>
+                            <div class="col">
+                                <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
+                            </div>
+                        </div>
+
+                        <div class="col"><button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;width: 100%;">VIEW
+                                DETAILS</button></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="cl"></div>
+    </div>
+
+
+    <!--[SECTION_6(Restaurant-menu)].................-->
+
+    <div class="container" style="margin-bottom:40px;">
+
+        <!--[subheading]...............-->
+        <h5 style="padding-bottom:0px;">Hotel Best Menus</h5>
+        <span
+            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+        <!--[subheading]...............-->
+
+        <h2>Our Signature Dishes</h2>
+
+        <div class="col-12">
+
+            <div class="row"
+                style="padding-top:40px;padding-bottom:40px;gap:20px;justify-content: center;align-items: center;">
+
+                <div class="col-5">
+                    <div class="row" style="flex-direction:column;gap:20px;">
+
+                        <div class="col row"
+                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_1.png"
+                                    style="width:100%;height: 175px;"></div>
+
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Spaghetti</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                <p style="margin-bottom: 5px;">Perfectly cooked spaghetti with savory Italian flavors.
+                                </p>
+                                <h5>$70/-</h5>
+                                <button
+                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                    NOW</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col row"
+                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_2.png"
+                                    style="width:100%;height: 175px;"></div>
+
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Pizza</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                <p style="margin-bottom: 5px;">Crispy crust loaded with premium toppings and mozzarella.
+                                </p>
+                                <h5>$60/-</h5>
+                                <button
+                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                    NOW</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col row"
+                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_3.png"
+                                    style="width:100%;height: 175px;"></div>
+
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Vegetarian Soup</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                <p style="margin-bottom: 5px;">Fresh seasonal vegetables in a flavorful broth.</p>
+                                <h5>$80/-</h5>
+                                <button
+                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                    NOW</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col row"
+                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_4.png"
+                                    style="width:100%;height: 175px;"></div>
+
+                            <div class="col">
+                                <h5 style="padding-bottom:0px;">Pepper Chicken</h5>
+                                <span
+                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                <p style="margin-bottom: 5px;">Spicy, flavorful chicken cooked to perfection.</p>
+                                <h5>$60/-</h5>
+                                <button
+                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                    NOW</button>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row" style="flex-direction:column;gap:20px;">
+
+                                <div class="col row"
+                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_5.png"
+                                            style="width:100%;height: 175px;"></div>
+
+                                    <div class="col">
+                                        <h5 style="padding-bottom:0px;">Fresh Meat</h5>
+                                        <span
+                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                        <p style="margin-bottom: 5px;">Quality meat, perfectly cooked.</p>
+                                        <h5>$30/-</h5>
+                                        <button
+                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                            NOW</button>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col row"
+                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_6.png"
+                                            style="width:100%;height: 175px;"></div>
+
+                                    <div class="col">
+                                        <h5 style="padding-bottom:0px;">Tuna Fish Salad</h5>
+                                        <span
+                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                        <p style="margin-bottom: 5px;">Light, refreshing salad with premium tuna.</p>
+                                        <h5>$80/-</h5>
+                                        <button
+                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                            NOW</button>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col row"
+                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_7.png"
+                                            style="width:100%;height: 175px;"></div>
+
+                                    <div class="col">
+                                        <h5 style="padding-bottom:0px;">Salmon Pasta</h5>
+                                        <span
+                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                        <p style="margin-bottom: 5px;">Fresh salmon with rich, flavorful Italian pasta.
+                                        </p>
+                                        <h5>$60/-</h5>
+                                        <button
+                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                            NOW</button>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col row"
+                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_8.png"
+                                            style="width:100%;height: 175px;"></div>
+
+                                    <div class="col">
+                                        <h5 style="padding-bottom:0px;">Pasta With Fish</h5>
+                                        <span
+                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                                        <p style="margin-bottom: 5px;">Creamy pasta with grilled fish and fresh herbs.
+                                        </p>
+                                        <h5>$50/-</h5>
+                                        <button
+                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                            NOW</button>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cl"></div>
+    </div>
+
+    <!--[SECTION-7-(VIDEO_AREA)]........................-->
+
+    <div class="container-fluid"
+        style="background-image: url('assets/IMG/PNG/vi_banner.png');background-position: center;background-repeat:no-repeat;background-size: cover;height:600px;">
+
+    </div>
+
+
+    <!--[SECTION-8-(CLIENT_SAYS)]...................-->
+
+    <div class="container-fluid" style="background-color:#F1EDE6;height:870px;margin-bottom:85px;">
+        <div class="container" style="padding-top: 50px;">
+
+            <!--[subheading]...............-->
+            <h5 style="padding-bottom:0px;">Testimonial</h5>
+            <span
+                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+            <!--[subheading]...............-->
+            <h2>What Our Guests Say</h2>
+            <div class="row slider_1">
+
+                <!--...........................................-->
+
+                <!-- <h1 class="about-title">OUR TEAM</h1> -->
+
+                <div class="carousel-container">
+                    <button class="nav-arrow left">‹</button>
+                    <div class="carousel-track">
+                        <div class="col row card" data-index="0"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_1.png" alt="Team Member 1"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">Olivia</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="1"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_4.png" alt="Team Member 2"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">Liam</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="2"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_2.png" alt="Team Member 3"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">Sophia</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="3"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_3.png" alt="Team Member 4"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">Isabella</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="4"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_5.png" alt="Team Member 5"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">James</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="5"
+                            style="flex-direction: column;justify-content: center;align-items: center;text-align: center;padding:10px;">
+                            <div class="col"><img src="assets/IMG/PNG/CE_6.png" alt="Team Member 6"></div>
+                            <div class="col">
+                                <h2 class="m-name" style="color: black;">William</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="nav-arrow right">›</button>
+                </div>
+
+
+
+                <div class="dots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                </div>
+
+                <!-- <div style="display: flex; justify-content: flex-end;width:100%;padding-right:10px;">
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                        data-name="bmc-button" data-slug="nidaltahir" data-color="#FFDD00" data-emoji="☕"
+                        data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000"
+                        data-font-color="#000000" data-coffee-color="#ffffff"></script>
+                </div> -->
+
+                <!--...........................................-->
+            </div>
+        </div>
+        <div class="cl"></div>
+    </div>
+
+
+    <!--[SECTION-9]...................-->
+
+    <div class="container" style="margin-bottom:85px;">
+
+        <!--[subheading]...............-->
+        <h5 style="padding-bottom:0px;">Testimonial</h5>
+        <span
+            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+        <!--[subheading]...............-->
+        <h2>What Our Guests Say</h2>
+
+        <div class="row" style="gap:20px;justify-content: center;align-items:center;">
+
+            <div class="col row" style="flex-direction:column;justify-content: center;align-items:center;gap:10px;">
+                <div class="col"><img src="assets/IMG/PNG/SE9_1.png" style="width:100%;"></div>
+                <div class="col">
+                    <h2 style="color: #CBAD8D;font-size:25px;"><span
+                            style="border-bottom:1px solid #CBAD8D;width:8%;display: inline-block;"></span> January 12,
+                        2026</h2>
+                </div>
+                <div class="col">
+                    <p>Find fresh travel ideas, hidden gems, hotel news, and practical tips to help you make the most of
+                        every journey</p>
+                </div>
+            </div>
+
+            <div class="col row" style="flex-direction:column;justify-content: center;align-items:center;gap:10px;">
+                <div class="col"><img src="assets/IMG/PNG/SE9_1.png" style="width:100%;"></div>
+                <div class="col">
+                    <h2 style="color: #CBAD8D;font-size:25px;"><span
+                            style="border-bottom:1px solid #CBAD8D;width:8%;display: inline-block;"></span> January 12,
+                        2026</h2>
+                </div>
+                <div class="col">
+                    <p>Find fresh travel ideas, hidden gems, hotel news, and practical tips to help you make the most of
+                        every journey</p>
+                </div>
+            </div>
+
+            <div class="col row" style="flex-direction:column;justify-content: center;align-items:center;gap:10px;">
+                <div class="col"><img src="assets/IMG/PNG/SE9_1.png" style="width:100%;"></div>
+                <div class="col">
+                    <h2 style="color: #CBAD8D;font-size:25px;"><span
+                            style="border-bottom:1px solid #CBAD8D;width:8%;display: inline-block;"></span> January 12,
+                        2026</h2>
+                </div>
+                <div class="col">
+                    <p>Find fresh travel ideas, hidden gems, hotel news, and practical tips to help you make the most of
+                        every journey</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="cl"></div>
+    </div>
+
+
+    <!--[SECTION-9]...................-->
+
+    <div class="container">
+
+        <div class="col row" style="gap:20px">
+            <div class="col row"></div>
+            <div class="col">
+                <div class="col row">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
 
 
 
+
+    <!--[SCRIPT].......................-->
+
+    <script>
+
+        // const teamMembers = [
+        //     {name: "Emily Kim", role: "Founder"},
+        //     {name: "Michael Steward", role: "Creative Director"},
+        //     {name: "Emma Rodriguez", role: "Lead Developer"},
+        //     {name: "Julia Gimmel", role: "UX Designer"},
+        //     {name: "Lisa Anderson", role: "Marketing Manager"},
+        //     {name: "James Wilson", role: "Product Manager"}
+        // ];
+
+        const cards = document.querySelectorAll(".card");
+        const dots = document.querySelectorAll(".dot");
+        // const memberName = document.querySelector(".m-name");
+        // const memberRole = document.querySelector(".m-role");
+        const leftArrow = document.querySelector(".nav-arrow.left");
+        const rightArrow = document.querySelector(".nav-arrow.right");
+        let currentIndex = 0;
+        let isAnimating = false;
+
+        function updateCarousel(newIndex) {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            currentIndex = (newIndex + cards.length) % cards.length;
+
+            cards.forEach((card, i) => {
+                const offset = (i - currentIndex + cards.length) % cards.length;
+
+                card.classList.remove(
+                    "center",
+                    "left-1",
+                    "left-2",
+                    "right-1",
+                    "right-2",
+                    "hidden"
+                );
+
+                if (offset === 0) {
+                    card.classList.add("center");
+                } else if (offset === 1) {
+                    card.classList.add("right-1");
+                } else if (offset === 2) {
+                    card.classList.add("right-2");
+                } else if (offset === cards.length - 1) {
+                    card.classList.add("left-1");
+                } else if (offset === cards.length - 2) {
+                    card.classList.add("left-2");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentIndex);
+            });
+
+            // memberName.style.opacity = "0";
+            // memberRole.style.opacity = "0";
+
+            setTimeout(() => {
+                // memberName.textContent = teamMembers[currentIndex].name;
+                // memberRole.textContent = teamMembers[currentIndex].role;
+                // memberName.style.opacity = "1";
+                // memberRole.style.opacity = "1";
+            }, 300);
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 800);
+        }
+
+        leftArrow.addEventListener("click", () => {
+            updateCarousel(currentIndex - 1);
+        });
+
+        rightArrow.addEventListener("click", () => {
+            updateCarousel(currentIndex + 1);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                updateCarousel(i);
+            });
+        });
+
+        cards.forEach((card, i) => {
+            card.addEventListener("click", () => {
+                updateCarousel(i);
+            });
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft") {
+                updateCarousel(currentIndex - 1);
+            } else if (e.key === "ArrowRight") {
+                updateCarousel(currentIndex + 1);
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener("touchstart", (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener("touchend", (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    updateCarousel(currentIndex + 1);
+                } else {
+                    updateCarousel(currentIndex - 1);
+                }
+            }
+        }
+
+        updateCarousel(0);
+
+
+
+
+    </script>
 
 </body>
 
