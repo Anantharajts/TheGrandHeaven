@@ -1,0 +1,140 @@
+@media(max-width:1024px) {
+
+    /*..[menu_area]...........................*/
+    .menu_area {
+        margin-top: 33px !important;
+    }
+
+    .menu_con {
+        justify-content: flex-start !important;
+        gap: 40px !important;
+    }
+
+    .menu {
+        gap: 10px !important;
+    }
+
+    .rs {
+        width: 22% !important;
+    }
+
+    .menu_btn {
+        gap: 48px !important;
+    }
+
+    /*..[banner]...........................*/
+
+    .banner_area {
+        padding-top: 14% !important;
+    }
+
+    /*..[SECTION-1]...........................*/
+
+    .in_put1 input {
+        width: 80% !important;
+    }
+
+    .in_put input {
+        width: 120% !important;
+    }
+
+    /*..[SECTION-2]...........................*/
+
+    .s2_txt {
+        width: 80% !important;
+    }
+
+    /*..[SECTION-3]...........................*/
+    .s3_txt {
+        padding: 0px !important;
+    }
+
+    /*..[SECTION-4]...........................*/
+
+    .s4_rowarea {
+        align-items: center !important;
+    }
+
+    .im_1 {
+        height: 151px !important;
+    }
+
+    .im_2 {
+        margin-top: 63px !important;
+    }
+
+    .im_3 {
+        height: 271px !important;
+    }
+
+    .im_4 {
+        height: 172% !important;
+    }
+
+    .im_5 {
+        width: 37% !important;
+    }
+
+
+    /*..[SECTION-5]...........................*/
+
+    .s5_bgarea {
+        height: 646px !important;
+    }
+
+    .s5_txt {
+        font-size: 14pt !important;
+    }
+
+    /*..[section-8]...........................*/
+
+    .slider_1 {
+        min-height: 120vh !important;
+    }
+
+    /*..[contact_us]...........................*/
+
+    .contact_p p {
+        font-size: 11pt;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 413px !important;
+    }
+
+    .footer_icons {
+        width: 55% !important;
+    }
+
+    .f_side1 {
+        flex: 0.7 !important;
+    }
+
+    .email_svg {
+        width: 32% !important;
+    }
+
+    .footer li {
+        font-size: 10pt;
+    }
+
+    .footer p {
+        font-size: 10pt;
+    }
+
+}
+
+
+/*...[].....................*/
+
+@media(max-width:760px) {
+
+    /*..[menu_area]...........................*/
+
+
+
+
+
+}

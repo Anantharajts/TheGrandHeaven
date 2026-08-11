@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/index.css" type="text/css">
     <script src="assets/JS/jquery.js"></script>
     <title>The Grand Heaven</title>
 
@@ -330,6 +331,16 @@
             .member-name::after {
                 right: -70px;
             }
+
+            /*-----[Responsive].........................*/
+
+            @media(max-width:1024px) {}
+
+
+
+
+
+
         }
     </style>
 
@@ -346,7 +357,7 @@
 
         <!--[menu_area]........-->
 
-        <div class="container"
+        <div class="container menu_area"
             style="background-color: white;border-radius:50px;height:70px;margin-top:100px;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;">
             <div class="row"
                 style="justify-content: center;align-items: center;padding-top: 10px;gap:20px;padding: 5px;padding-top: 10px;">
@@ -355,7 +366,7 @@
                     <img src="assets/IMG/PNG/logo_2 (2).png">
                 </div>
 
-                <div class="col row" style="justify-content:end;align-items: center;gap:10px;">
+                <div class="col row menu_con" style="justify-content:end;align-items: center;gap:10px;">
 
                     <div class="col-8 row menu" style="justify-content: end;align-items: center;text-align:center;">
 
@@ -365,8 +376,8 @@
                         <div class="col-2" style="padding: 0px;"><a href="#"
                                 style="text-decoration:none;color:black;cursor: pointer;">Services</a>
                         </div>
-                        <div class="col-2" style="padding: 0px;"><a href="#"
-                                style="text-decoration:none;color:black;cursor: pointer;">Rooms&Suite</a></div>
+                        <div class="col-2 rs" style="padding: 0px;"><a href="#"
+                                style="text-decoration:none;color:black;cursor: pointer;">Rooms & Suite</a></div>
                         <div class="col-2" style="padding: 0px;"><a href="#"
                                 style="text-decoration:none;color:black;cursor: pointer;">News</a>
                         </div>
@@ -383,7 +394,7 @@
 
                     </div>
 
-                    <div class="col-3 row" style="align-items: center;gap:25px;text-align:center;">
+                    <div class="col-3 row menu_btn" style="align-items: center;gap:25px;text-align:center;">
 
                         <div class="col-4"><button
                                 style="border: none;padding:3px 25px 3px 25px;background-color: black;color: white;border-radius: 20px;">Login</button>
@@ -402,7 +413,7 @@
         </div>
 
         <!--[banner]........-->
-        <div class="container" style="padding-top:7%;">
+        <div class="container banner_area" style="padding-top:7%;">
             <div class="row banner" style="justify-content: center;align-items:center;">
                 <div class="col row text_area1"
                     style="justify-content: center;align-items:center;flex-direction: column;">
@@ -452,7 +463,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="col" style="padding:0px;">
+                        <div class="col in_put1" style="padding:0px;">
                             <input type="date" name="date" id="date_id" style="border: none;width: 55%;">
                         </div>
                     </div>
@@ -479,7 +490,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="col" style="padding:0px;">
+                        <div class="col in_put1" style="padding:0px;">
                             <input type="date" name="date_out" id="dateout_id" style="border: none;width: 55%;">
                         </div>
                     </div>
@@ -509,12 +520,12 @@
                             </svg>
                         </div>
                         <div class="col row" style="padding:0px;">
-                            <div class="col"><input type="number" name="room" id="room_id" placeholder="0 Rooms"
+                            <div class="col in_put"><input type="number" name="room" id="room_id" placeholder="0 Rooms"
                                     style="border: none;width: 100%;"></div>
-                            <div class="col"><input type="number" name="adult" id="adult_id" placeholder="0 Adult"
-                                    style="border: none;width: 100%;"></div>
-                            <div class="col"><input type="number" name="child" id="child_id" placeholder="0 Child"
-                                    style="border: none;width: 100%;"></div>
+                            <div class="col in_put"><input type="number" name="adult" id="adult_id"
+                                    placeholder="0 Adult" style="border: none;width: 100%;"></div>
+                            <div class="col in_put"><input type="number" name="child" id="child_id"
+                                    placeholder="0 Child" style="border: none;width: 100%;"></div>
 
                         </div>
                     </div>
@@ -523,8 +534,7 @@
                 <div class="col-2 row" style="justify-content: center;align-items: center;">
                     <div class="col">
                         <button
-                            style="padding:5px 15px 5px 15px;border-radius:5px;background-color: black;color: white;cursor: pointer;margin-top: 30px;">CHECK
-                            NOW</button>
+                            style="padding:5px 15px 5px 15px;border-radius:5px;background-color: black;color: white;cursor: pointer;margin-top: 30px;">CHECK&nbsp;NOW</button>
                     </div>
                 </div>
 
@@ -559,7 +569,7 @@
                 <div class="col row" style="flex-direction: column;gap: 10px;">
                     <div class="col"><img src="assets/IMG/SE_1.jpg" style="width:100%;"></div>
                     <div class="col row">
-                        <h4
+                        <h4 class="s2_txt"
                             style="font-size:16pt;padding: 10px 15px 10px 40px;width:60%;background-color: #CBAD8D;border-radius: 0px 5px 5px 0px;">
                             Buy One Get One</h4>
                     </div>
@@ -581,7 +591,7 @@
                 <div class="col row" style="flex-direction: column;gap: 10px;">
                     <div class="col"><img src="assets/IMG/SE_2.jpg" style="width:100%;"></div>
                     <div class="col row">
-                        <h4
+                        <h4 class="s2_txt"
                             style="font-size:16pt;padding: 10px 15px 10px 40px;width:60%;background-color: #CBAD8D;border-radius: 0px 5px 5px 0px;">
                             Family Discount</h4>
                     </div>
@@ -603,7 +613,7 @@
                 <div class="col row" style="flex-direction: column;gap: 10px;">
                     <div class="col"><img src="assets/IMG/SE_3.jpg" style="width:100%;"></div>
                     <div class="col row">
-                        <h4
+                        <h4 class="s2_txt"
                             style="font-size:16pt;padding: 10px 15px 10px 40px;width:60%;background-color: #CBAD8D;border-radius: 0px 5px 5px 0px;">
                             Couples Offer</h4>
                     </div>
@@ -667,51 +677,51 @@
                             </div>
                         </div>
 
-                        <div class="col row">
+                        <!-- <div class="col row"> -->
 
-                            <div class="col row" style="justify-content: center;align-items: center;">
-                                <div class="col-3">
+                        <div class="col row" style="justify-content: center;align-items: center;">
+                            <div class="col-3">
 
-                                    <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
-                                        xml:space="preserve" fill="#CBAD8D">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve"
+                                    fill="#CBAD8D">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                    </g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: none;
+                                                stroke: #CBAD8D;
+                                                stroke-width: 2;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                                stroke-miterlimit: 10;
+                                            }
+                                        </style>
+                                        <g>
+                                            <path
+                                                d="M30.9,24.7c-0.2-0.5-0.7-0.8-1.3-0.6l-2.6,0.9c-2.7,0.9-5.7,0.6-8.2-0.6l0.2-0.2c1.7-1.7,1.7-4.5,0-6.2c0,0,0,0,0,0 l-7.5-7.5C10.2,9,7.8,9,6.4,10.4L2,14.8c-0.3,0.3-0.5,0.7-0.5,1.2s0.2,0.9,0.5,1.2c0.6,0.6,1.5,0.7,2.1,0.2L9,14.2l2.8,2.8 l-2.6,2.6c-1.6-0.1-3.3,0.1-4.9,0.6l-2.6,0.9c-0.5,0.2-0.8,0.7-0.6,1.3c0.2,0.5,0.7,0.8,1.3,0.6l2.6-0.9c3.6-1.2,7.6-0.4,10.4,2.2 c2.3,2.1,5.3,3.2,8.4,3.2c1.3,0,2.7-0.2,4-0.6l2.6-0.9C30.8,25.8,31.1,25.2,30.9,24.7z">
+                                            </path>
+                                            <path d="M23,17c2.8,0,5-2.2,5-5s-2.2-5-5-5s-5,2.2-5,5S20.2,17,23,17z">
+                                            </path>
                                         </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <style type="text/css">
-                                                .st0 {
-                                                    fill: none;
-                                                    stroke: #CBAD8D;
-                                                    stroke-width: 2;
-                                                    stroke-linecap: round;
-                                                    stroke-linejoin: round;
-                                                    stroke-miterlimit: 10;
-                                                }
-                                            </style>
-                                            <g>
-                                                <path
-                                                    d="M30.9,24.7c-0.2-0.5-0.7-0.8-1.3-0.6l-2.6,0.9c-2.7,0.9-5.7,0.6-8.2-0.6l0.2-0.2c1.7-1.7,1.7-4.5,0-6.2c0,0,0,0,0,0 l-7.5-7.5C10.2,9,7.8,9,6.4,10.4L2,14.8c-0.3,0.3-0.5,0.7-0.5,1.2s0.2,0.9,0.5,1.2c0.6,0.6,1.5,0.7,2.1,0.2L9,14.2l2.8,2.8 l-2.6,2.6c-1.6-0.1-3.3,0.1-4.9,0.6l-2.6,0.9c-0.5,0.2-0.8,0.7-0.6,1.3c0.2,0.5,0.7,0.8,1.3,0.6l2.6-0.9c3.6-1.2,7.6-0.4,10.4,2.2 c2.3,2.1,5.3,3.2,8.4,3.2c1.3,0,2.7-0.2,4-0.6l2.6-0.9C30.8,25.8,31.1,25.2,30.9,24.7z">
-                                                </path>
-                                                <path d="M23,17c2.8,0,5-2.2,5-5s-2.2-5-5-5s-5,2.2-5,5S20.2,17,23,17z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
+                                    </g>
+                                </svg>
 
-                                </div>
-                                <div class="col">
-                                    <h5>The Best Swimming</h5>
-                                </div>
+                            </div>
+                            <div class="col s3_txt">
+                                <h5>The Best Swimming</h5>
                             </div>
                         </div>
+                        <!-- </div> -->
                     </div>
 
                     <div class="col row" style="flex-direction: column;padding-top:35px;padding-bottom: 20px;">
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -723,9 +733,9 @@
                                     </svg> </span> Elite Hospitality Services.</p>
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -737,9 +747,9 @@
                                     </svg> </span> Fibre Internet.</p>
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -752,9 +762,9 @@
                         </div>
 
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -814,12 +824,53 @@
         <!--[subheading]...............-->
 
 
-        <div class="row">
+        <div class="row s4_rowarea">
 
-            <div class="col img_area_2"><img src="assets/IMG/PNG/SE4_GALLERY.png" style="height: 500px;width: 90%;">
+            <div class="col img_area_2">
+
+                <div class="col row" style="display: grid;gap:20px;">
+
+                    <div class="col" style="display: grid;gap:20px;grid-auto-flow: column;width: 85%;">
+
+                        <div class="col im_1"
+                            style="width:100%;background-image: url('assets/IMG/PNG/m5.png');background-repeat:no-repeat;height:211px;background-size: cover;">
+                        </div>
+                        <div class="col im_2"
+                            style="width:85%;background-image: url('assets/IMG/PNG/m4.png');background-repeat:no-repeat;height:57%;background-size: cover;margin-top:91px;">
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <div class="col" style="display: grid;gap:20px;grid-auto-flow: column;">
+
+                            <div class="col im_3"
+                                style="width:100%;background-image: url('assets/IMG/PNG/m3.png');background-repeat:no-repeat;background-size: cover;height:381px;">
+                            </div>
+                            <div class="col" style="display: grid;gap:89px;">
+
+                                <div class="col im_4"
+                                    style="width:85%;background-image: url('assets/IMG/PNG/m2.png');background-repeat:no-repeat;height: 149%;background-size: cover;">
+                                </div>
+                                <div class="col im_5"
+                                    style="width:42%;background-image: url('assets/IMG/PNG/m1.png');background-repeat:no-repeat;background-size: cover;">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
             </div>
 
-            <div class="col text_area_2">
+            <div class="col text_area_2" style="align-self: center;">
                 <div class="col">
                     <h2 style="margin-bottom: 15px;">Couple Suite</h2>
 
@@ -835,9 +886,9 @@
 
                     <div class="col row" style="flex-direction: column;padding-top:10px;padding-bottom: 20px;">
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -849,9 +900,9 @@
                                     </svg> </span> Pick & Drop Service.</p>
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -863,9 +914,9 @@
                                     </svg> </span> City Tour Guide.</p>
                         </div>
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -878,9 +929,9 @@
                         </div>
 
 
-                        <div class="col-5">
+                        <div class="col-6">
                             <p><span><svg viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                        style="width:15%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
+                                        style="width:11%" stroke="#CBAD8D" stroke-width="0.00024000000000000003">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
                                         </g>
@@ -898,7 +949,7 @@
 
                     <div class="col-4 row">
                         <button
-                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">BOOK
+                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;margin-left: 13px;">BOOK
                             NOW</button>
                     </div>
 
@@ -912,7 +963,7 @@
 
     <!--[SECTION-5]...................-->
 
-    <div class="container-fluid" style="background-color:#F1EDE6;height:720px;margin-bottom:85px;">
+    <div class="container-fluid s5_bgarea" style="background-color:#F1EDE6;height:720px;margin-bottom:85px;">
 
         <div class="container" style="padding-top: 50px;">
 
@@ -935,13 +986,14 @@
                         style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top: 15px;padding-bottom: 15px;">
                         <div class="col"><img src="assets/IMG/PNG/SE5_1.png" style="width: 100%;"></div>
 
-                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                        <div class="col-12 row"
+                            style="border-bottom:1px solid #D9D9D9;gap: 30px;justify-content: space-between;">
                             <div class="col">
-                                <h5 style="padding-bottom:0px;">Deluxe Suite</h5>
+                                <h5 class="s5_txt" style="padding-bottom:0px;">Deluxe Suite</h5>
                                 <span
                                     style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
                             </div>
-                            <div class="col">
+                            <div class="col-4">
                                 <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
                             </div>
                         </div>
@@ -957,13 +1009,14 @@
                         style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top:15px;padding-bottom: 15px;">
                         <div class="col"><img src="assets/IMG/PNG/SE5_2.png" style="width: 100%;"></div>
 
-                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                        <div class="col-12 row"
+                            style="border-bottom:1px solid #D9D9D9;gap: 30px;justify-content: space-between;">
                             <div class="col">
-                                <h5 style="padding-bottom:0px;">Premium Suite</h5>
+                                <h5 class="s5_txt" style="padding-bottom:0px;">Premium Suite</h5>
                                 <span
                                     style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
                             </div>
-                            <div class="col">
+                            <div class="col-4">
                                 <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
                             </div>
                         </div>
@@ -979,13 +1032,14 @@
                         style="flex-direction: column;border-radius:10px;background-color:white;gap:10px;box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;padding:6px;padding-top: 15px;padding-bottom: 15px;">
                         <div class="col"><img src="assets/IMG/PNG/SE5_3.png" style="width: 100%;"></div>
 
-                        <div class="col-12 row" style="border-bottom:1px solid #D9D9D9;gap: 30px;">
+                        <div class="col-12 row"
+                            style="border-bottom:1px solid #D9D9D9;gap: 30px;justify-content: space-between;">
                             <div class="col">
-                                <h5 style="padding-bottom:0px;">Royal Suite</h5>
+                                <h5 class="s5_txt" style="padding-bottom:0px;">Royal Suite</h5>
                                 <span
                                     style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
                             </div>
-                            <div class="col">
+                            <div class="col-4">
                                 <h5 style="text-align: right;"><span style="color: #CBAD8D;">$250</span>/Day</h5>
                             </div>
                         </div>
@@ -1020,181 +1074,173 @@
             <div class="row"
                 style="padding-top:40px;padding-bottom:40px;gap:20px;justify-content: center;align-items: center;">
 
-                <div class="col-5">
-                    <div class="row" style="flex-direction:column;gap:20px;">
+                <div class="col row"
+                    style="flex-direction:column;gap:20px;justify-content: center;align-items: center;">
 
-                        <div class="col row"
-                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_1.png"
-                                    style="width:100%;height: 175px;"></div>
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_1.png"
+                                style="width:100%;height: 175px;"></div>
 
-                            <div class="col">
-                                <h5 style="padding-bottom:0px;">Spaghetti</h5>
-                                <span
-                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                <p style="margin-bottom: 5px;">Perfectly cooked spaghetti with savory Italian flavors.
-                                </p>
-                                <h5>$70/-</h5>
-                                <button
-                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                    NOW</button>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col row"
-                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_2.png"
-                                    style="width:100%;height: 175px;"></div>
-
-                            <div class="col">
-                                <h5 style="padding-bottom:0px;">Pizza</h5>
-                                <span
-                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                <p style="margin-bottom: 5px;">Crispy crust loaded with premium toppings and mozzarella.
-                                </p>
-                                <h5>$60/-</h5>
-                                <button
-                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                    NOW</button>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col row"
-                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_3.png"
-                                    style="width:100%;height: 175px;"></div>
-
-                            <div class="col">
-                                <h5 style="padding-bottom:0px;">Vegetarian Soup</h5>
-                                <span
-                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                <p style="margin-bottom: 5px;">Fresh seasonal vegetables in a flavorful broth.</p>
-                                <h5>$80/-</h5>
-                                <button
-                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                    NOW</button>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col row"
-                            style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                            <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_4.png"
-                                    style="width:100%;height: 175px;"></div>
-
-                            <div class="col">
-                                <h5 style="padding-bottom:0px;">Pepper Chicken</h5>
-                                <span
-                                    style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                <p style="margin-bottom: 5px;">Spicy, flavorful chicken cooked to perfection.</p>
-                                <h5>$60/-</h5>
-                                <button
-                                    style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                    NOW</button>
-                            </div>
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <div class="col-5">
-                    <div class="row">
                         <div class="col">
-                            <div class="row" style="flex-direction:column;gap:20px;">
-
-                                <div class="col row"
-                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_5.png"
-                                            style="width:100%;height: 175px;"></div>
-
-                                    <div class="col">
-                                        <h5 style="padding-bottom:0px;">Fresh Meat</h5>
-                                        <span
-                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                        <p style="margin-bottom: 5px;">Quality meat, perfectly cooked.</p>
-                                        <h5>$30/-</h5>
-                                        <button
-                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                            NOW</button>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col row"
-                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_6.png"
-                                            style="width:100%;height: 175px;"></div>
-
-                                    <div class="col">
-                                        <h5 style="padding-bottom:0px;">Tuna Fish Salad</h5>
-                                        <span
-                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                        <p style="margin-bottom: 5px;">Light, refreshing salad with premium tuna.</p>
-                                        <h5>$80/-</h5>
-                                        <button
-                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                            NOW</button>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col row"
-                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_7.png"
-                                            style="width:100%;height: 175px;"></div>
-
-                                    <div class="col">
-                                        <h5 style="padding-bottom:0px;">Salmon Pasta</h5>
-                                        <span
-                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                        <p style="margin-bottom: 5px;">Fresh salmon with rich, flavorful Italian pasta.
-                                        </p>
-                                        <h5>$60/-</h5>
-                                        <button
-                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                            NOW</button>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col row"
-                                    style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
-                                    <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_8.png"
-                                            style="width:100%;height: 175px;"></div>
-
-                                    <div class="col">
-                                        <h5 style="padding-bottom:0px;">Pasta With Fish</h5>
-                                        <span
-                                            style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
-                                        <p style="margin-bottom: 5px;">Creamy pasta with grilled fish and fresh herbs.
-                                        </p>
-                                        <h5>$50/-</h5>
-                                        <button
-                                            style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
-                                            NOW</button>
-                                    </div>
-
-                                </div>
-
-
-
-
-                            </div>
+                            <h5 style="padding-bottom:0px;">Spaghetti</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Perfectly cooked spaghetti with savory Italian flavors.
+                            </p>
+                            <h5>$70/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
                         </div>
+
                     </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_2.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Pizza</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Crispy crust loaded with premium toppings and mozzarella.
+                            </p>
+                            <h5>$60/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_3.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Vegetarian Soup</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Fresh seasonal vegetables in a flavorful broth.</p>
+                            <h5>$80/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_4.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Pepper Chicken</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Spicy, flavorful chicken cooked to perfection.</p>
+                            <h5>$60/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+
+
                 </div>
+
+                <div class="col row"
+                    style="flex-direction:column;gap:20px;justify-content: center;align-items: center;">
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_5.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Fresh Meat</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Quality meat, perfectly cooked.</p>
+                            <h5>$30/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_6.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Tuna Fish Salad</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Light, refreshing salad with premium tuna.</p>
+                            <h5>$80/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_7.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Salmon Pasta</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Fresh salmon with rich, flavorful Italian pasta.
+                            </p>
+                            <h5>$60/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col row"
+                        style="justify-content: center;align-items: center;background-color: white;padding: 10px;border-radius:5px;box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;">
+                        <div class="col-4" style="padding:0px;"><img src="assets/IMG/PNG/me_8.png"
+                                style="width:100%;height: 175px;"></div>
+
+                        <div class="col">
+                            <h5 style="padding-bottom:0px;">Pasta With Fish</h5>
+                            <span
+                                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+                            <p style="margin-bottom: 5px;">Creamy pasta with grilled fish and fresh herbs.
+                            </p>
+                            <h5>$50/-</h5>
+                            <button
+                                style="background-color: black;color: white;padding:3px 15px 3px 15px;border-radius: 5px;">ORDER
+                                NOW</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -1324,13 +1370,6 @@
                     <div class="dot" data-index="5"></div>
                 </div>
 
-                <!-- <div style="display: flex; justify-content: flex-end;width:100%;padding-right:10px;">
-                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-                        data-name="bmc-button" data-slug="nidaltahir" data-color="#FFDD00" data-emoji="☕"
-                        data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000"
-                        data-font-color="#000000" data-coffee-color="#ffffff"></script>
-                </div> -->
-
                 <!--...........................................-->
             </div>
         </div>
@@ -1372,7 +1411,8 @@
                         2026</h2>
                 </div>
                 <div class="col">
-                    <p>Discover travel tips, local attractions, hotel updates, and inspiration to make your next stay even more memorable.</p>
+                    <p>Discover travel tips, local attractions, hotel updates, and inspiration to make your next stay
+                        even more memorable.</p>
                 </div>
             </div>
 
@@ -1384,7 +1424,8 @@
                         2026</h2>
                 </div>
                 <div class="col">
-                    <p>Explore our latest blog posts for travel inspiration, local experiences, and useful tips to help you plan the perfect stay.</p>
+                    <p>Explore our latest blog posts for travel inspiration, local experiences, and useful tips to help
+                        you plan the perfect stay.</p>
                 </div>
             </div>
 
@@ -1409,7 +1450,7 @@
             <div class="col row" style="flex-direction: column;">
                 <div class="col" style="text-align: center;"><img src="assets/IMG/PNG/CON_1.png"
                         style="width:80%;height: 380px;"></div>
-                <div class="col row"
+                <div class="col row contact_p"
                     style="justify-content:center;align-items:center;text-align: center;padding-top: 20px;">
                     <div class="col">
                         <p><span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -1455,22 +1496,29 @@
 
                         <div class="col row" style="gap:20px;">
                             <div class="col" style="padding:0px;"><input type="text" name="full_name" id="fn_id"
-                                    placeholder="Full Name" style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
+                                    placeholder="Full Name"
+                                    style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
                             </div>
                             <div class="col" style="padding:0px;"><input type="email" name="email" id="email_id"
-                                    placeholder="Email" style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;"></div>
+                                    placeholder="Email"
+                                    style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
+                            </div>
                         </div>
 
                         <div class="col row" style="gap:20px;">
                             <div class="col" style="padding:0px;"><input type="date" name="Check_in" id="c_in_id"
-                                    placeholder="Check In" style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
+                                    placeholder="Check In"
+                                    style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
                             </div>
                             <div class="col" style="padding:0px;"><input type="date" name="Check_out" id="c_out_id"
-                                    placeholder="Check Out" style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;"></div>
+                                    placeholder="Check Out"
+                                    style="width: 100%;padding: 3px 5px 3px 5px;border:none;background-color:#FAF7F2;">
+                            </div>
                         </div>
 
                         <div class="col">
-                            <textarea name="message" id="msg_id" style="width:100%;height:150px;padding:5px;border:none;background-color:#FAF7F2;"
+                            <textarea name="message" id="msg_id"
+                                style="width:100%;height:150px;padding:5px;border:none;background-color:#FAF7F2;"
                                 placeholder="Message"></textarea>
                         </div>
 
@@ -1493,25 +1541,26 @@
 
     <!--[footer].....................-->
 
-    <div class="container-fluid" style="background-color:black;height:445px;border-bottom:30px solid #CBAD8D;">
+    <div class="container-fluid footer" style="background-color:black;height:445px;border-bottom:30px solid #CBAD8D;">
         <div class="container">
             <div class="col row" style="gap:20px;padding-top:50px;">
 
-                <div class="col row" style="flex-direction:column;justify-content:center;gap:15px;">
-                    <div class="col"><img src="assets/IMG/PNG/footer_logo.png" alt="logo_footer"></div>
-                    <div class="col">
-                        <p style="color:white;">Feel free to reach out if you'd like to collaborate with us or just have
+                <div class="col row f_side1" style="flex-direction:column;justify-content:center;gap:15px;">
+                    <div class="col"><img src="assets/IMG/PNG/footer_logo.png" alt="logo_footer">
+
+                        <p style="color:white;margin-bottom:0px;margin-top: 20px;">Feel free to reach out if you'd like
+                            to collaborate with us or just have
                             a chat. We'd love to hear from you!</p>
                     </div>
-                    <div class="col row"
-                        style="background-color: #555555;border-radius:3px;width:80%;gap:40px;margin-left: 10px;">
+                    <div class="col-12 row"
+                        style="background-color: #555555;border-radius:3px;width:80%;margin-left: 10px;">
 
                         <div class="col-8"><input type="email" name="ft_email" id="ft_email_id" placeholder="Email"
-                                style="width: 100%;padding:10px;border-radius:3px;border:none;background-color: #555555;">
+                                style="width: 100%;padding:10px;border-radius:3px;border:none;background-color: #555555;outline: none;">
                         </div>
-                        <div class="col-3"><button style="background-color: #555555;border: none;"><svg
-                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    style="width:30%;padding-top:10px;float: right;">
+                        <div class="col-4"><button style="background-color: #555555;border: none;"><svg
+                                    class="email_svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width:21%;padding-top:10px;float: right;">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -1527,7 +1576,7 @@
                         <div class="col">
                             <h2 style="color:white;margin-bottom: 20px;">Follow Us</h2>
                         </div>
-                        <div class="col row" style="gap:10px;width:35%;padding:0px;">
+                        <div class="col row footer_icons" style="gap:10px;width:35%;padding:0px;">
                             <div class="col"><svg fill="#CBAD8D" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -1615,7 +1664,7 @@
                     </div>
 
 
-                    <div class="col row">
+                    <div class="col row" style="gap:10px;">
 
                         <div class="col">
                             <h2 style="color: white;font-size:16pt;">New York</h2>
