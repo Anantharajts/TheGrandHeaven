@@ -127,14 +127,56 @@
 }
 
 
-/*...[].....................*/
+/*...[tab_size].....................*/
 
-@media(max-width:760px) {
+@media(max-width:768px) {
 
     /*..[menu_area]...........................*/
 
+    .menu_con {
+        display: none;
+    }
 
+    .text_1 {
+        font-size: 33px !important;
+        width: none !important;
+    }
 
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 50px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 666px !important;
+    }
+
+    .check_availability {
+        flex-direction: column !important;
+        align-items:start !important;
+        gap: 20px !important;
+    }
+    .check{width: 100%;border-bottom: 1px solid rgb(184, 184, 184);}
+    .check2{width: 100%;}
+    .check svg{width: 50% !important;}
+    .check input{width: 100% !important;outline:none;}
+    .check2 button{width: 103% !important;}
+
+    .s2_colum{flex: 0 0 100%;}
 
 
 }

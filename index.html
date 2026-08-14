@@ -10,6 +10,15 @@
     <script src="assets/JS/jquery.js"></script>
     <title>The Grand Heaven</title>
 
+
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $(".toggle_menuarea").slideToggle();
+            });
+        });
+    </script>
+
     <style>
         @font-face {
             font-family: "Michroma";
@@ -351,16 +360,15 @@
 
     <!--[menu]..........-->
 
-    <div class="container-fluid"
+    <div class="container-fluid menuarea_bg"
         style="background-image: url(assets/IMG/PNG/index_bg.png);background-repeat: no-repeat;background-position: center;background-size: cover;height:1015px;">
 
 
         <!--[menu_area]........-->
 
-        <div class="container menu_area"
-            style="background-color: white;border-radius:50px;height:70px;margin-top:100px;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;">
+        <div class="container menu_area">
             <div class="row"
-                style="justify-content: center;align-items: center;padding-top: 10px;gap:20px;padding: 5px;padding-top: 10px;">
+                style="background-color: white;border-radius:50px;height:70px;margin-top:10px;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;margin-bottom: 11px;justify-content: center;align-items: center;padding-top: 10px;gap:20px;padding: 5px;padding-top: 10px;">
 
                 <div class="col-2 logo" style="padding-left: 34px;">
                     <img src="assets/IMG/PNG/logo_2 (2).png">
@@ -407,9 +415,38 @@
 
                 </div>
 
+                <!--[toggle area]....................................-->
 
+                <div class="col row toggle_area" style="display:none;">
+                    <div class="col toggle">
+                        <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
             </div>
 
+            <!--[toggle_menuarea].......................-->
+
+            <div class="col row toggle_menuarea"
+                style="display:none;text-align: center;background-color: white;border-radius: 5px;width: 50%;position: absolute;overflow:hidden;left:50%;">
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">Home</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">Services</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">Rooms & Suite</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">News</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">About</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">Contact Us</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">Login</a></div>
+                <div class="col-12" style="padding-bottom: 10px;"><a href="#">SignUp</a></div>
+            </div>
+            <div class="cl"></div>
         </div>
 
         <!--[banner]........-->
@@ -441,9 +478,9 @@
 
         <div class="row"
             style="transform: translateY(-28px);border-radius:10px;display:flex;background-color:white;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;padding:15px;justify-content: center;align-items: center;">
-            <div class="row" style="gap: 10px;justify-content:center;align-items:center;">
+            <div class="row check_availability" style="gap: 10px;justify-content:center;align-items:center;">
 
-                <div class="col-3 row" style="flex-direction: column;">
+                <div class="col-3 row check" style="flex-direction: column;">
                     <div class="col">
                         <p>Check-In</p>
                     </div>
@@ -470,7 +507,7 @@
                 </div>
 
 
-                <div class="col-3 row" style="flex-direction: column;">
+                <div class="col-3 row check" style="flex-direction: column;">
                     <div class="col">
                         <p>Check-Out</p>
                     </div>
@@ -496,7 +533,7 @@
                     </div>
                 </div>
 
-                <div class="col-4 row" style="flex-direction: column;">
+                <div class="col-4 row check" style="flex-direction: column;">
                     <div class="col">
                         <p style="margin-bottom: 3px;">Guests</p>
                     </div>
@@ -531,7 +568,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 row" style="justify-content: center;align-items: center;">
+                <div class="col-2 row check2" style="justify-content: center;align-items: center;">
                     <div class="col">
                         <button
                             style="padding:5px 15px 5px 15px;border-radius:5px;background-color: black;color: white;cursor: pointer;margin-top: 30px;">CHECK&nbsp;NOW</button>
@@ -564,7 +601,7 @@
         <div class="row" style="gap: 20px;">
 
 
-            <div class="col"
+            <div class="col s2_colum"
                 style="background-color: white;border-radius:10px;box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;padding-bottom: 10px;padding-top: 10px;">
                 <div class="col row" style="flex-direction: column;gap: 10px;">
                     <div class="col"><img src="assets/IMG/SE_1.jpg" style="width:100%;"></div>
