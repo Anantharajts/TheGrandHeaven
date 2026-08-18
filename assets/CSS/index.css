@@ -165,18 +165,371 @@
         height: 666px !important;
     }
 
+    /*..[SECTION-1]...........................*/
+
     .check_availability {
         flex-direction: column !important;
-        align-items:start !important;
+        align-items: start !important;
         gap: 20px !important;
     }
-    .check{width: 100%;border-bottom: 1px solid rgb(184, 184, 184);}
-    .check2{width: 100%;}
-    .check svg{width: 50% !important;}
-    .check input{width: 100% !important;outline:none;}
-    .check2 button{width: 103% !important;}
 
-    .s2_colum{flex: 0 0 100%;}
+    .check {
+        width: 100%;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+
+    .check2 {
+        width: 100%;
+    }
+
+    .check svg {
+        width: 50% !important;
+    }
+
+    .check input {
+        width: 100% !important;
+        outline: none;
+    }
+
+    .check2 button {
+        width: 103% !important;
+    }
+
+    /*..[SECTION-2]...........................*/
+    .s2_colum {
+        flex: 0 0 100%;
+    }
+
+    /*..[SECTION-3]...........................*/
+    .image_area_1 {
+        order: 1 !important;
+    }
+
+    .text_area_1 {
+        order: 2 !important;
+    }
+
+    .s3_con {
+        height: auto !important;
+    }
+
+    .s3_row {
+        height: auto !important;
+        flex-direction: column;
+    }
+
+    .se3_1img {
+        display: none !important;
+    }
+
+    .se3_2img {
+        display: none !important;
+    }
+
+    .se3_3img img {
+        height: 520px !important;
+    }
+
+    .text_area_row {
+        flex-direction: row !important;
+    }
+
+    .s3_btn button {
+        margin-left: 15px !important;
+    }
+
+    /*..[SECTION-4]...........................*/
+    .s4_img1 {
+        display: none !important;
+    }
+
+    .s4_img2 {
+        display: none !important;
+    }
+
+    .im_3 {
+        border-radius: 14px !important;
+    }
+
+    .s4_rowarea {
+        flex-direction: column !important;
+        gap: 20px !important;
+        ;
+    }
+
+    .s4_row {
+        flex-direction: row !important;
+    }
+
+    /*..[SECTION-5]...........................*/
+
+    .s5_col {
+        gap: 0px !important;
+        flex-direction: column !important;
+    }
+
+    /*..[SECTION-6]...........................*/
+
+    .s6_menu p {
+        font-size: 10pt !important;
+    }
+
+    /*..[SECTION-7]...........................*/
+
+    .video_area {
+        height: 370px !important;
+    }
+
+    /*..[SECTION-8]...........................*/
+
+    .card {
+        height: 435px !important;
+        width: 305px !important;
+    }
+
+    /*..[SECTION-9]...........................*/
+
+    .s9_area h2 {
+        font-size: 20px !important;
+    }
+
+    .s9_area p {
+        font-size: 10pt !important;
+    }
+
+    /*..[SECTION-10]...........................*/
+
+    .s10_1 {
+        display: none !important;
+    }
+
+    /*..[SECTION-11]...........................*/
+
+    .footer {
+        height: 691px !important;
+    }
+
+    .footer_area {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .footer_icons {
+        width: 35% !important;
+    }
+
+    .footer_inputarea {
+        width: 59% !important;
+    }
+}
 
 
+
+/*..[phone_size]...........................*/
+
+
+@media(max-width:425px) {
+
+
+    /*..[menu_area]...........................*/
+
+    .menu_con {
+        display: none;
+    }
+
+    .logo img{width: 100px !important;}
+
+    .text_1 {
+        font-size: 21px !important;
+        width: 378px !important;
+    }
+
+    .text_p2 {
+        font-size: 14px !important;
+        width: 370px !important;
+    }
+
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 40px !important;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 522px !important;
+    }
+
+    /*..[SECTION-2]...........................*/
+    .s2_colum {
+        flex: 0 0 0%;
+    }
+
+    .s2_area {
+        flex-direction: column !important;
+    }
+
+    /*..[SECTION-3]...........................*/
+    .image_area_1 {
+        order: 1 !important;
+    }
+
+    .text_area_1 {
+        order: 2 !important;
+    }
+
+    .text_area_1 p {
+        font-size: 11pt !important;
+    }
+
+    .s3_con {
+        height: auto !important;
+    }
+
+    .s3_row {
+        height: auto !important;
+        flex-direction: column;
+    }
+
+    .se3_1img {
+        display: none !important;
+    }
+
+    .se3_2img {
+        display: none !important;
+    }
+
+    .se3_3img img {
+        height: 520px !important;
+    }
+
+    .text_area_row {
+        flex-direction: row !important;
+    }
+
+    .s3_btn button {
+        margin-left: 15px !important;
+    }
+
+    .text_area_1 h5 {
+        font-size: 17px !important;
+    }
+
+    .text_area_p p {
+        width: 200px !important;
+    }
+
+    .text_area_p svg {
+        width: 10% !important;
+    }
+
+    /*..[SECTION-4]...........................*/
+    .s4_img1 {
+        display: none !important;
+    }
+
+    .s4_img2 {
+        display: none !important;
+    }
+
+    .im_3 {
+        border-radius: 14px !important;
+    }
+
+    .s4_rowarea {
+        flex-direction: column !important;
+        gap: 20px !important;
+        ;
+    }
+
+    .s4_row {
+        flex-direction: row !important;
+    }
+
+    /*..[SECTION-5]...........................*/
+
+    .s5_col {
+        gap: 40px !important;
+        flex-direction: row !important;
+    }
+
+    .s5_row {
+        flex-direction: column !important;
+    }
+
+    .s5_bgarea {
+        height: 1776px !important;
+    }
+
+    /*..[SECTION-6]...........................*/
+
+    .s6_menu p {
+        font-size: 10pt !important;
+    }
+
+    .s6_menu {
+        flex-direction: column !important;
+    }
+
+    /*..[SECTION-7]...........................*/
+
+    .video_area {
+        height: 370px !important;
+    }
+
+    /*..[SECTION-8]...........................*/
+
+    .card {
+        height: 435px !important;
+        width: 305px !important;
+    }
+
+    .card {
+        transform: translateX(0px) scale(0.9) translateZ(0px) !important;
+    }
+
+
+    /*..[SECTION-9]...........................*/
+
+    .s9_area {
+        flex-direction: column !important;
+    }
+
+
+    /*..[SECTION-10]...........................*/
+
+    .s10_1 {
+        display: none !important;
+    }
+
+    /*..[SECTION-11]...........................*/
+
+    .footer {
+        height: 780px !important;
+    }
+
+    .footer_area {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .footer_icons {
+        width: 60% !important;
+    }
+
+    .footer_inputarea {
+        width: 100% !important;
+    }
 }
