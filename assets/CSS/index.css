@@ -171,15 +171,18 @@
         flex-direction: column !important;
         align-items: start !important;
         gap: 20px !important;
+        padding-right: 0px !important;
     }
 
     .check {
         width: 100%;
         border-bottom: 1px solid rgb(184, 184, 184);
+        padding:0px !important;
     }
 
     .check2 {
         width: 100%;
+        padding: 0px !important;
     }
 
     .check svg {
@@ -192,12 +195,28 @@
     }
 
     .check2 button {
-        width: 103% !important;
+        width: 100% !important;
+    }
+
+    .S1_btn {
+        padding: 0px !important;
     }
 
     /*..[SECTION-2]...........................*/
     .s2_colum {
         flex: 0 0 100%;
+    }
+
+    .s2_row_img1 img {
+        height: 350px !important;
+    }
+
+    .s2_row_img2 img {
+        height: 260px !important;
+    }
+
+    .s2_row_img3 img {
+        height: 260px !important;
     }
 
     /*..[SECTION-3]...........................*/
@@ -227,7 +246,10 @@
     }
 
     .se3_3img img {
-        height: 520px !important;
+        height: 367px !important;
+    }
+    .se3_3img{
+        height: 375px !important;
     }
 
     .text_area_row {
@@ -236,6 +258,14 @@
 
     .s3_btn button {
         margin-left: 15px !important;
+    }
+
+    .s3_btn {
+        width: 100% !important;
+    }
+
+    .s3_p {
+        margin-left: 43px !important;
     }
 
     /*..[SECTION-4]...........................*/
@@ -261,6 +291,10 @@
         flex-direction: row !important;
     }
 
+    .s4_btn {
+        width: 100% !important;
+    }
+
     /*..[SECTION-5]...........................*/
 
     .s5_col {
@@ -272,6 +306,10 @@
 
     .s6_menu p {
         font-size: 10pt !important;
+    }
+
+    .s6_menu img {
+        height: 114px !important;
     }
 
     /*..[SECTION-7]...........................*/
@@ -337,7 +375,9 @@
         display: none;
     }
 
-    .logo img{width: 100px !important;}
+    .logo img {
+        width: 100px !important;
+    }
 
     .text_1 {
         font-size: 21px !important;
@@ -372,6 +412,18 @@
         height: 522px !important;
     }
 
+    /*..[SECTION-1]...........................*/
+
+    .check2 {
+        padding: 0px !important;
+    }
+
+    .S1_btn {
+        padding: 0px !important;
+    }
+
+    /* .check2 button{padding:0px !important;} */
+
     /*..[SECTION-2]...........................*/
     .s2_colum {
         flex: 0 0 0%;
@@ -379,6 +431,18 @@
 
     .s2_area {
         flex-direction: column !important;
+    }
+
+    .s2_row_img1 img {
+        height: 330px !important;
+    }
+
+    .s2_row_img2 img {
+        height: 330px !important;
+    }
+
+    .s2_row_img3 img {
+        height: 330px !important;
     }
 
     /*..[SECTION-3]...........................*/
@@ -412,7 +476,11 @@
     }
 
     .se3_3img img {
-        height: 520px !important;
+        height: 304px !important;
+    }
+
+    .se3_3img {
+        height: 295px !important;
     }
 
     .text_area_row {
@@ -531,5 +599,9 @@
 
     .footer_inputarea {
         width: 100% !important;
+    }
+
+    .footer p {
+        font-size: 8pt !important;
     }
 }
