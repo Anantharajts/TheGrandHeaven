@@ -586,6 +586,11 @@
         transform: translateX(0px) scale(0.9) translateZ(0px) !important;
     }
 
+    .s8_bg {
+        height: 820px !important;
+        margin-bottom: 55px !important;
+    }
+
 
     /*..[SECTION-9]...........................*/
 
