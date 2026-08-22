@@ -1,0 +1,23 @@
+/*--[font]....................................*/
+@font-face {
+    font-family: "Michroma";
+    src: url("assets/FONTS/Michroma.ttf") format("ttf");
+}
+
+.text_1 {
+    font-family: 'Michroma' !important;
+}
+
+
+
+h2,
+h3 {
+    font-family: 'Poppins-bold', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*....................................*/
