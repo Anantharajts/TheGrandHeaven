@@ -20,3 +20,107 @@ p {
 }
 
 /*....................................*/
+
+.registration_bg {
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 10px;
+}
+
+.registration_area {
+    padding: 2px 12px;
+    gap: 25px;
+}
+
+.image_area {
+    background-image: url('../IMG/PNG/registration_img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: auto;
+    color: white;
+}
+
+.image_area h2 {
+    padding-top: 20px;
+}
+
+.image_area p {
+    font-size: 12pt;
+}
+
+/*--[input_area].................................*/
+
+.input_area {
+    gap: 16px;
+}
+
+
+.in {
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    background-color: rgb(218, 216, 216);
+    border: none;
+    border-radius: 5px;
+}
+
+.input_area textarea {
+    width: 96%;
+    height: 100px;
+    outline: none;
+    background-color: rgb(218, 216, 216);
+    border: none;
+    border-radius: 5px;
+}
+
+.input_area select {
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    background-color: rgb(218, 216, 216);
+    border: none;
+    border-radius: 5px;
+}
+
+.in_1 {
+    gap: 10px;
+}
+
+.in_2 {
+    gap: 10px;
+}
+
+.in_3 {
+    gap: 10px;
+}
+
+.in_4 {
+    gap: 10px;
+}
+
+.in_5 {
+    gap: 10px;
+}
+
+.input_area button {
+    border: none;
+    padding: 5px 25px 5px 25px;
+    background-color:rgb(0, 0, 0); 
+    color:rgb(252, 252, 252); 
+    border-radius: 5px;
+    width: 96%;
+}
+
+.tet p{
+    font-size:10pt;
+}
+.tet a{
+    text-decoration:none;
+}
