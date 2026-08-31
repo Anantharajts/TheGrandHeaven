@@ -1,0 +1,74 @@
+/*--[font]....................................*/
+@font-face {
+    font-family: "Michroma";
+    src: url("assets/FONTS/Michroma.ttf") format("ttf");
+}
+
+.text_1 {
+    font-family: 'Michroma' !important;
+}
+
+
+
+h2,
+h3 {
+    font-family: 'Poppins-bold', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/*....................................*/
+
+.menu_bg {
+    background-image: url('../IMG/PNG/about.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+/*[menu]...........*/
+
+.menu_se_area {
+    padding-top: 50px;
+}
+
+.menu_sec {
+    background-color: white;
+    border-radius: 50px;
+    padding:8px 20px;
+}
+
+.menu_area {
+    gap:110px;
+    align-items: center;
+}
+
+.me_nu {
+    align-items: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu a{
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+}
+.cart{
+    text-align: center;
+}
+.cart svg{
+    width:65%;
+}
+
+.menu_txt select{
+    
+}
+
+/*[banner]...........*/
