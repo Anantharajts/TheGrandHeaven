@@ -112,15 +112,135 @@ p {
 .input_area button {
     border: none;
     padding: 5px 25px 5px 25px;
-    background-color:rgb(0, 0, 0); 
-    color:rgb(252, 252, 252); 
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
     border-radius: 5px;
     width: 96%;
 }
 
-.tet p{
-    font-size:10pt;
+.tet p {
+    font-size: 10pt;
 }
-.tet a{
-    text-decoration:none;
+
+.tet a {
+    text-decoration: none;
+}
+
+
+/*[Responsive section]..........................*/
+
+@media(max-width:1024px) {
+
+    .in_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .in_3 {
+        padding: 0px;
+    }
+
+    .tet p {
+        font-size: 9pt;
+    }
+
+    .text_area p {
+        font-size: 10pt;
+    }
+
+    .address textarea {
+        width: 94%;
+    }
+
+    .btn button {
+        width: 94%;
+    }
+
+}
+
+/*.................*/
+
+@media(max-width:768px) {
+    .registration_bg {
+        transform: translate(-50%, -35%);
+    }
+
+    .registration_area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input_area {
+        align-items: center;
+    }
+
+    .title h2 {
+        margin-left: 14px;
+    }
+
+    .profile input {
+        margin-left: 14px;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center !important;
+    }
+
+    .address textarea {
+        width: 96%;
+    }
+
+    .btn button {
+        width: 96%;
+    }
+}
+
+/*......................*/
+
+@media(max-width:425px) {
+    .registration_bg {
+        transform: translate(-50%, -39%);
+    }
+
+    .registration_area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .address textarea {
+        width: 93%;
+    }
+
+    .btn button {
+        width: 93%;
+    }
+
+    .input_area {
+        align-items: center;
+        padding:0px;
+    }
+
+    .title h2 {
+        margin-left: 14px;
+    }
+
+    .profile input {
+        margin-left: 14px;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+    }
 }
