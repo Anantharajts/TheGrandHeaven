@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="assets/CSS/about.css" type="text/css">
     <script src="assets/JS/jquery.js"></script>
     <title>Document</title>
+
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $(".toggle_menuarea").slideToggle();
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
@@ -55,8 +65,42 @@
 
                 </div>
 
+                <!--[toggle area]....................................-->
+
+                <div class="col row toggle_area">
+                    <div class="col toggle">
+                        <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
             </div>
+
+
+            <!--[toggle_menuarea].......................-->
+
+            <div class="col row toggle_menuarea">
+                <div class="col-12 tog"><a href="#">Home</a></div>
+                <div class="col-12 tog"><a href="#">Services</a></div>
+                <div class="col-12 tog"><a href="#">Rooms & Suite</a></div>
+                <div class="col-12 tog"><a href="#">News</a></div>
+                <div class="col-12 tog"><a href="#">About</a></div>
+                <div class="col-12 tog"><a href="#">Contact Us</a></div>
+                <div class="col-12 tog"><a href="login.html">Login</a></div>
+                <div class="col-12 tog"><a href="Registration.html">SignUp</a></div>
+            </div>
+
         </div>
+
+
 
         <!--[banner_section]..............................-->
 
@@ -88,7 +132,9 @@
     <div class="container row_1">
         <div class="col row section_1_area">
             <!--...................-->
-            <div class="col img_area"><img src="assets/IMG/PNG/adout_r1_img.png"></div>
+            <div class="col img_area"><img src="assets/IMG/PNG/about_r1_img.png"></div>
+
+            <div class="col r1_img_area"><img src="assets/IMG/PNG/about_r1_imgarea.png"></div>
             <!--...................-->
             <div class="col r1_text_area">
 
@@ -104,7 +150,7 @@
 
                     <div class="col row points">
 
-                        <div class="col">
+                        <div class="col poin_r1">
                             <p><span class="star"><svg fill="#cbad8d" viewBox="-1 0 19 19"
                                         xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#cbad8d">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -118,7 +164,7 @@
                                     </svg></span>&nbsp; Airport Transfer</p>
                         </div>
 
-                        <div class="col">
+                        <div class="col poin_r1">
                             <p><span class="star"><svg fill="#cbad8d" viewBox="-1 0 19 19"
                                         xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#cbad8d">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -132,7 +178,7 @@
                                     </svg></span>&nbsp; City Tour Guide</p>
                         </div>
 
-                        <div class="col">
+                        <div class="col poin_r1">
                             <p><span class="star"><svg fill="#cbad8d" viewBox="-1 0 19 19"
                                         xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#cbad8d">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -146,7 +192,7 @@
                                     </svg></span>&nbsp; Swimming Pool</p>
                         </div>
 
-                        <div class="col">
+                        <div class="col poin_r1">
                             <p><span class="star"><svg fill="#cbad8d" viewBox="-1 0 19 19"
                                         xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg" stroke="#cbad8d">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -180,10 +226,10 @@
 
         <div class="col row r2_area">
 
-            
+
             <!--...................-->
             <div class="col row r2_1">
-                <div class="col r2_img"><img src=""></div>
+                <div class="col r2_img"><img src="assets/IMG/PNG/about_r2_1.png"></div>
                 <div class="col r2_text">
 
                     <div class="col r2_title">
@@ -203,9 +249,440 @@
             </div>
             <!--...................-->
 
+            <div class="col row r2_2">
+                <div class="col r2_img"><img src="assets/IMG/PNG/about_r2_2.png"></div>
+                <div class="col r2_text">
+
+                    <div class="col r2_title">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Spa Center</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>Spa center is a facility dedicated to providing wellness and relaxation services aimed at
+                            rejuvenating both the body and mind.</p>
+
+                        <button class="r2_btn">CONTACT US</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--...................-->
+
+            <div class="col row r2_3">
+                <div class="col r2_img"><img src="assets/IMG/PNG/about_r2_3.png"></div>
+                <div class="col r2_text">
+
+                    <div class="col r2_title">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Fitness Center</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>Fitness center is a facility equipped with a variety of exercise machines, weights, and other
+                            fitness tools designed to help individuals improve.</p>
+
+                        <button class="r2_btn">CONTACT US</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--...................-->
+
+
+
+
         </div>
 
     </div>
+
+
+    <!--[row_3].......................................-->
+
+    <div class="container-fluid s8_bg">
+        <div class="container cont">
+
+            <!--[subheading]...............-->
+            <h5 style="padding-bottom:0px;">Testimonial</h5>
+            <span
+                style="background-color:#CBAD8D;width:90px;height:2px; display: inline-block;padding: 0px;margin-bottom: 16px;"></span>
+            <!--[subheading]...............-->
+            <h2>What Our Guests Say</h2>
+            <div class="row slider_1">
+
+                <!--...........................................-->
+
+                <!-- <h1 class="about-title">OUR TEAM</h1> -->
+
+                <div class="carousel-container">
+                    <button class="nav-arrow left">‹</button>
+                    <div class="carousel-track">
+                        <div class="col row card" data-index="0">
+                            <div class="col"><img src="assets/IMG/PNG/CE_1.png" alt="Team Member 1"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">Olivia</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="1">
+                            <div class="col"><img src="assets/IMG/PNG/CE_4.png" alt="Team Member 2"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">Liam</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="2">
+                            <div class="col"><img src="assets/IMG/PNG/CE_2.png" alt="Team Member 3"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">Sophia</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="3">
+                            <div class="col"><img src="assets/IMG/PNG/CE_3.png" alt="Team Member 4"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">Isabella</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="4">
+                            <div class="col"><img src="assets/IMG/PNG/CE_5.png" alt="Team Member 5"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">James</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                        <div class="col row card" data-index="5">
+                            <div class="col"><img src="assets/IMG/PNG/CE_6.png" alt="Team Member 6"></div>
+                            <div class="col" style="height: 20px;">
+                                <h2 class="m-name" style="color: black;">William</h2>
+                            </div>
+                            <div class="col">
+                                <p class="m-role" style="color: black;">The hotel was amazing! The room was perfect and
+                                    very clean. The staff was so nice and helpful. I would definitely recommend this
+                                    hotel to anyone and would stay here again in a heartbeat!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="nav-arrow right">›</button>
+                </div>
+
+
+
+                <div class="dots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                </div>
+
+                <!--...........................................-->
+            </div>
+        </div>
+        <div class="cl"></div>
+    </div>
+
+
+    <!--[footer]....................................-->
+
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="col row footer_area">
+
+                <div class="col row f_side1">
+                    <div class="col"><img src="assets/IMG/PNG/footer_logo.png" alt="logo_footer">
+
+                        <p>Feel free to reach out if you'd like
+                            to collaborate with us or just have
+                            a chat. We'd love to hear from you!</p>
+                    </div>
+                    <div class="col-12 row footer_inputarea">
+
+                        <div class="col-8"><input type="email" name="ft_email" id="ft_email_id" placeholder="Email">
+                        </div>
+                        <div class="col-4"><button><svg class="email_svg" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M5.36328 12.0523C4.01081 11.5711 3.33457 11.3304 3.13309 10.9655C2.95849 10.6492 2.95032 10.2673 3.11124 9.94388C3.29694 9.57063 3.96228 9.30132 5.29295 8.76272L17.8356 3.68594C19.1461 3.15547 19.8014 2.89024 20.2154 3.02623C20.5747 3.14427 20.8565 3.42608 20.9746 3.7854C21.1106 4.19937 20.8453 4.85465 20.3149 6.16521L15.2381 18.7078C14.6995 20.0385 14.4302 20.7039 14.0569 20.8896C13.7335 21.0505 13.3516 21.0423 13.0353 20.8677C12.6704 20.6662 12.4297 19.99 11.9485 18.6375L10.4751 14.4967C10.3815 14.2336 10.3347 14.102 10.2582 13.9922C10.1905 13.8948 10.106 13.8103 10.0086 13.7426C9.89876 13.6661 9.76719 13.6193 9.50407 13.5257L5.36328 12.0523Z"
+                                            stroke="#CBAD8D" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </g>
+                                </svg></button></div>
+
+                    </div>
+                    <div class="col row f_side1_se">
+                        <div class="col">
+                            <h2 style="color:white;margin-bottom: 20px;">Follow Us</h2>
+                        </div>
+                        <div class="col row footer_icons" style="gap:10px;width:35%;padding:0px;">
+                            <div class="col"><svg fill="#CBAD8D" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z">
+                                        </path>
+                                    </g>
+                                </svg></div>
+                            <div class="col"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"
+                                            fill="#CBAD8D"></path>
+                                    </g>
+                                </svg></div>
+                            <div class="col"><svg viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>youtube [#168]</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs> </defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Dribbble-Light-Preview"
+                                                transform="translate(-300.000000, -7442.000000)" fill="#CBAD8D">
+                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                    <path
+                                                        d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289"
+                                                        id="youtube-[#168]"> </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                            <div class="col"><svg fill="#CBAD8D" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                    xml:space="preserve">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <g id="7935ec95c421cee6d86eb22ecd12f847">
+                                            <path style="display: inline;"
+                                                d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col row sec_2">
+
+                    <div class="col">
+                        <h2>Service</h2>
+
+                        <ul>
+                            <li>Store Directory</li>
+                            <li>Top Hotels</li>
+                            <li>Quick Links</li>
+                            <li>Important Links</li>
+                            <li>Insights</li>
+                            <li>Knowledge Center</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="col">
+                        <h2>Company</h2>
+
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Career</li>
+                            <li>Contact</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="col row sec_2_r1">
+
+                        <div class="col">
+                            <h2>New York</h2>
+                            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                        </div>
+                        <div class="col">
+                            <h2>London</h2>
+                            <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                            <p>1229-555-0109<br>Thegrandhaven@yourwebsite.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--[SCRIPT].......................-->
+
+    <script>
+
+        const cards = document.querySelectorAll(".card");
+        const dots = document.querySelectorAll(".dot");
+        const leftArrow = document.querySelector(".nav-arrow.left");
+        const rightArrow = document.querySelector(".nav-arrow.right");
+        let currentIndex = 0;
+        let isAnimating = false;
+
+        function updateCarousel(newIndex) {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            currentIndex = (newIndex + cards.length) % cards.length;
+
+            cards.forEach((card, i) => {
+                const offset = (i - currentIndex + cards.length) % cards.length;
+
+                card.classList.remove(
+                    "center",
+                    "left-1",
+                    "left-2",
+                    "right-1",
+                    "right-2",
+                    "hidden"
+                );
+
+                if (offset === 0) {
+                    card.classList.add("center");
+                } else if (offset === 1) {
+                    card.classList.add("right-1");
+                } else if (offset === 2) {
+                    card.classList.add("right-2");
+                } else if (offset === cards.length - 1) {
+                    card.classList.add("left-1");
+                } else if (offset === cards.length - 2) {
+                    card.classList.add("left-2");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === currentIndex);
+            });
+
+
+            setTimeout(() => {
+            }, 300);
+
+            setTimeout(() => {
+                isAnimating = false;
+            }, 800);
+        }
+
+        leftArrow.addEventListener("click", () => {
+            updateCarousel(currentIndex - 1);
+        });
+
+        rightArrow.addEventListener("click", () => {
+            updateCarousel(currentIndex + 1);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                updateCarousel(i);
+            });
+        });
+
+        cards.forEach((card, i) => {
+            card.addEventListener("click", () => {
+                updateCarousel(i);
+            });
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "ArrowLeft") {
+                updateCarousel(currentIndex - 1);
+            } else if (e.key === "ArrowRight") {
+                updateCarousel(currentIndex + 1);
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener("touchstart", (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener("touchend", (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    updateCarousel(currentIndex + 1);
+                } else {
+                    updateCarousel(currentIndex - 1);
+                }
+            }
+        }
+
+        updateCarousel(0);
+
+
+
+
+    </script>
+
+
+
+
 
 
 

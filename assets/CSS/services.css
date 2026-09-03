@@ -1,0 +1,162 @@
+/*--[font]....................................*/
+@font-face {
+    font-family: "Michroma";
+    src: url("assets/FONTS/Michroma.ttf") format("ttf");
+}
+
+.text_1 {
+    font-family: 'Michroma' !important;
+}
+
+
+
+h2,
+h3 {
+    font-family: 'Poppins-bold', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #FAF7F2;
+}
+
+/*....................................*/
+
+.menu_bg {
+    background-image: url('../IMG/PNG/about.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+/*[menu]...........*/
+
+.menu_area {
+    padding-top: 50px;
+}
+
+.menu_area_1 {
+    background-color: white;
+    border-radius: 50px;
+    height: 70px;
+    margin-top: 10px;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    margin-bottom: 11px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.logo {
+    padding-left: 34px;
+}
+
+.menu_con {
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_txt {
+    padding: 0px;
+}
+
+.rs {
+    padding: 0px;
+}
+
+
+.rs a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.menu_txt a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.menu_txt select {
+    padding: 3px 5px 3px 5px;
+    background-color: #CBAD8D;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_btn {
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.btn button {
+    border: none;
+    padding: 3px 25px 3px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 10pt;
+}
+
+/*[banner]...........................*/
+
+.title {
+    padding-top: 24%;
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 30;
+    color: white;
+}
+
+.title p {
+    color: white;
+}
+
+.title span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+/*[toggle].......................................*/
+
+.toggle_area {
+    display: none;
+}
+
+.toggle_menuarea {
+    display: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+}
+
+.tog {
+    padding-bottom: 10px;
+}

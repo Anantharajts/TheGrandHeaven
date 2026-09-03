@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/services.css" type="text/css">
+    <script src="assets/JS/jquery.js"></script>
+    <title>Document</title>
+
+    <script>
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                $(".toggle_menuarea").slideToggle();
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid menu_bg">
+
+        <!--[menu_area]........-->
+
+        <div class="container menu_area">
+            <div class="row menu_area_1">
+
+                <div class="col-2 logo">
+                    <img src="assets/IMG/PNG/logo_2 (2).png">
+                </div>
+
+                <div class="col row menu_con">
+
+                    <div class="col-8 row menu">
+
+                        <div class="col-2 menu_txt"><a href="#">Home</a>
+                        </div>
+                        <div class="col-2 menu_txt"><a href="#">Services</a>
+                        </div>
+                        <div class="col-2 rs"><a href="#">Rooms & Suite</a></div>
+                        <div class="col-2 menu_txt"><a href="#">News</a>
+                        </div>
+                        <div class="col-2 menu_txt"><select name="pages" id="pages_id">
+                                <option value="0">Pages</option>
+                                <option value="1"><a href="#">About</a></option>
+                                <option value="2"><a href="#">Contact Us</a></option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3 row menu_btn">
+
+                        <div class="col-4 btn"><a href="login.html"><button>Login</button></a>
+                        </div>
+                        <div class="col-4 btn"><a href="Registration.html"><button>SignUp</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--[toggle area]....................................-->
+
+                <div class="col row toggle_area">
+                    <div class="col toggle">
+                        <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--[toggle_menuarea].......................-->
+
+            <div class="col row toggle_menuarea">
+                <div class="col-12 tog"><a href="#">Home</a></div>
+                <div class="col-12 tog"><a href="#">Services</a></div>
+                <div class="col-12 tog"><a href="#">Rooms & Suite</a></div>
+                <div class="col-12 tog"><a href="#">News</a></div>
+                <div class="col-12 tog"><a href="#">About</a></div>
+                <div class="col-12 tog"><a href="#">Contact Us</a></div>
+                <div class="col-12 tog"><a href="login.html">Login</a></div>
+                <div class="col-12 tog"><a href="Registration.html">SignUp</a></div>
+            </div>
+
+        </div>
+
+
+
+        <!--[banner_section]..............................-->
+
+        <div class="container text_bg">
+
+            <div class="col row text_area">
+
+                <div class="col title">
+                    <!--[subheading]...............-->
+                    <h2 style="padding-bottom:0px;">ABOUT</h2>
+                    <span></span>
+                    <!--[subheading]...............-->
+
+                    <p>Crafting Memorable Stays with Exceptional Service.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
