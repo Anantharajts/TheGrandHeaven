@@ -27,7 +27,7 @@ body {
 /*....................................*/
 
 .menu_bg {
-    background-image: url('../IMG/PNG/about.png');
+    background-image: url('../IMG/PNG/services_bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,6 +129,7 @@ body {
 
 .title p {
     color: white;
+    width: 55%;
 }
 
 .title span {
@@ -159,4 +160,176 @@ body {
 
 .tog {
     padding-bottom: 10px;
+}
+
+/*[row_1].....................................*/
+
+.row_1_bg {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.r1_area {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section_1 {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.column_1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.image_area {
+    padding: 0px;
+}
+
+.image_area img {
+    width: 100%;
+}
+
+.text {
+    padding: 10px;
+}
+
+.text button {
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*-------------------------------*/
+
+.section_2 {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.column_2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.image_area_2 {
+    padding: 0px;
+}
+
+.image_area_2 img {
+    width: 100%;
+}
+
+.text_2 {
+    padding: 10px;
+}
+
+.text_2 button {
+    padding: 5px 25px 5px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/*[footer]......................................*/
+
+.footer {
+    background-color: black;
+    height: 445px;
+    border-bottom: 30px solid #CBAD8D;
+}
+
+.footer_area {
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.f_side1 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.f_side1 p {
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.footer_inputarea {
+    background-color: #555555;
+    border-radius: 3px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.footer_inputarea input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #555555;
+    outline: none;
+}
+
+.footer_inputarea button {
+    background-color: #555555;
+    border: none;
+}
+
+.footer_inputarea svg {
+    width: 21%;
+    padding-top: 10px;
+    float: right;
+}
+
+.f_side1_se {
+    flex-direction: column;
+}
+
+.footer_icons {
+    gap: 10px;
+    width: 35%;
+    padding: 0px;
+}
+
+.sec_2 h2 {
+    color: white;
+}
+
+.sec_2 li {
+    color: white;
+}
+
+.sec_2_r1 p {
+    color: white;
+}
+
+
+/*[responsive]..........................................*/
+
+@media(max-width:1024px){
+    
 }
