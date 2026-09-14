@@ -330,6 +330,240 @@ body {
 
 /*[responsive]..........................................*/
 
-@media(max-width:1024px){
-    
+@media(max-width:1024px) {
+
+    /*..[menu_area]...........................*/
+    .menu_area {
+        margin-top: 0px;
+    }
+
+    .menu_con {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .rs {
+        width: 22%;
+    }
+
+    .menu_btn {
+        gap: 48px;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 413px;
+    }
+
+    .footer_icons {
+        width: 55%;
+    }
+
+    .f_side1 {
+        flex: 0.7;
+    }
+
+    .email_svg {
+        width: 32%;
+    }
+
+    .footer li {
+        font-size: 10pt;
+    }
+
+    .footer p {
+        font-size: 10pt;
+    }
+
+}
+
+/*--................................*/
+
+
+@media(max-width:768px) {
+
+    /*..[menu_area]...........................*/
+
+    .menu_con {
+        display: none;
+    }
+
+    .text_1 {
+        font-size: 33px !important;
+        width: none !important;
+    }
+
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 50px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 666px !important;
+    }
+
+    /*[banner].................................*/
+
+    .title {
+        padding-top: 29%;
+    }
+
+    .menu_bg {
+        height: 535px;
+    }
+
+    .title p {
+        width: 70%;
+    }
+
+    /*[row_1].....................................*/
+
+    .r1_area {
+        flex-direction: row;
+    }
+
+    .section_1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section_2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 691px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 35%;
+    }
+
+    .footer_inputarea {
+        width: 59%;
+    }
+}
+
+/*--.................................*/
+
+
+@media(max-width:425px) {
+    /*..[menu_area]...........................*/
+
+    .menu_con {
+        display: none;
+    }
+
+    .logo img {
+        width: 100px !important;
+    }
+
+    .text_1 {
+        font-size: 21px !important;
+        width: 378px !important;
+    }
+
+    .text_p2 {
+        font-size: 12px !important;
+        width: 370px !important;
+    }
+
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 40px !important;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 550px !important;
+    }
+
+    /*[banner].......................................*/
+
+    .title {
+        padding-top: 52%;
+    }
+
+    .title p {
+        width: 100%;
+    }
+
+    /*[row_1].....................................*/
+
+    .r1_area {
+        flex-direction: column;
+    }
+
+    .section_1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section_2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 780px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 60%;
+    }
+
+    .footer_inputarea {
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: 8pt;
+    }
 }

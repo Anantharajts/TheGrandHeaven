@@ -679,16 +679,16 @@ body {
     padding: 0px;
 }
 
-.sec_2 h2{
+.sec_2 h2 {
     color: white;
 }
 
-.sec_2 li{
+.sec_2 li {
     color: white;
 }
 
-.sec_2_r1 p{
-    color:white;
+.sec_2_r1 p {
+    color: white;
 }
 
 
@@ -726,19 +726,19 @@ body {
     /*..[footer]...........................*/
 
     .footer {
-        height: 413px !important;
+        height: 413px;
     }
 
     .footer_icons {
-        width: 55% !important;
+        width: 55%;
     }
 
     .f_side1 {
-        flex: 0.7 !important;
+        flex: 0.7;
     }
 
     .email_svg {
-        width: 32% !important;
+        width: 32%;
     }
 
     .footer li {
@@ -748,6 +748,7 @@ body {
     .footer p {
         font-size: 10pt;
     }
+
 
 }
 
@@ -852,20 +853,20 @@ body {
     /*..[footer]...........................*/
 
     .footer {
-        height: 691px !important;
+        height: 691px;
     }
 
     .footer_area {
-        flex-direction: column !important;
-        gap: 40px !important;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .footer_icons {
-        width: 35% !important;
+        width: 35%;
     }
 
     .footer_inputarea {
-        width: 59% !important;
+        width: 59%;
     }
 
 
@@ -881,25 +882,25 @@ body {
     }
 
     .logo img {
-        width: 100px !important;
+        width: 100px;
     }
 
     .text_1 {
-        font-size: 21px !important;
-        width: 378px !important;
+        font-size: 21px;
+        width: 378px;
     }
 
     .text_p2 {
-        font-size: 12px !important;
-        width: 370px !important;
+        font-size: 12px;
+        width: 370px;
     }
 
     .toggle_area {
-        display: block !important;
+        display: block;
     }
 
     .toggle svg {
-        width: 40px !important;
+        width: 40px;
         float: right;
         padding-right: 2px;
     }
@@ -910,11 +911,11 @@ body {
     }
 
     .menu_area {
-        height: auto !important;
+        height: auto;
     }
 
     .menuarea_bg {
-        height: 550px !important;
+        height: 550px;
     }
 
     /*[banner].......................................*/
@@ -949,32 +950,32 @@ body {
     }
 
     .s8_bg {
-        height: 820px !important;
-        margin-bottom: 55px !important;
+        height: 820px;
+        margin-bottom: 55px;
     }
 
 
     /*..[footer]...........................*/
 
     .footer {
-        height: 780px !important;
+        height: 780px;
     }
 
     .footer_area {
-        flex-direction: column !important;
-        gap: 40px !important;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .footer_icons {
-        width: 60% !important;
+        width: 60%;
     }
 
     .footer_inputarea {
-        width: 100% !important;
+        width: 100%;
     }
 
     .footer p {
-        font-size: 8pt !important;
+        font-size: 8pt;
     }
 
 

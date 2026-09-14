@@ -1,0 +1,691 @@
+/*--[font]....................................*/
+@font-face {
+    font-family: "Michroma";
+    src: url("assets/FONTS/Michroma.ttf") format("ttf");
+}
+
+.text_1 {
+    font-family: 'Michroma' !important;
+}
+
+
+
+h2,
+h3 {
+    font-family: 'Poppins-bold', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #FAF7F2;
+}
+
+/*....................................*/
+
+.menu_bg {
+    background-image: url('../IMG/PNG/rooms_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+/*[menu]...........*/
+
+.menu_area {
+    padding-top: 50px;
+}
+
+.menu_area_1 {
+    background-color: white;
+    border-radius: 50px;
+    height: 70px;
+    margin-top: 10px;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    margin-bottom: 11px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 20px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.logo {
+    padding-left: 34px;
+}
+
+.menu_con {
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_txt {
+    padding: 0px;
+}
+
+.rs {
+    padding: 0px;
+}
+
+
+.rs a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.menu_txt a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.menu_txt select {
+    padding: 3px 5px 3px 5px;
+    background-color: #CBAD8D;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_btn {
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.btn button {
+    border: none;
+    padding: 3px 25px 3px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 10pt;
+}
+
+
+/*[toggle].......................................*/
+
+.toggle_area {
+    display: none;
+}
+
+.toggle_menuarea {
+    display: none;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+}
+
+.tog {
+    padding-bottom: 10px;
+}
+
+
+/*[banner]...........................*/
+
+.title {
+    padding-top: 24%;
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 30;
+    color: white;
+}
+
+.title p {
+    color: white;
+    width: 50%;
+}
+
+.title span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+
+/*-[row_1 (rooms check availability)]...................................*/
+
+.rca_bg {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.rca_area {
+    /* transform: translateY(-28px); */
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rca_1 {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+}
+
+.svg_area {
+    padding: 0px;
+    padding-left: 20px;
+}
+
+.svg_area svg {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.in_put1 {
+    padding: 0px;
+}
+
+.in_put1 input {
+    border: none;
+    width: 55%;
+}
+
+.check {
+    flex-direction: column;
+}
+
+.input_2 {
+    padding: 0px;
+}
+
+.in_put input {
+    border: none;
+    width: 100%;
+}
+
+.check2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.S1_btn button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/*[row_2]...................................................*/
+
+.row_2_bg {
+    margin-bottom: 50px;
+}
+
+.row_2_area {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+}
+
+.img_1 {
+    background-image: url(../IMG/PNG/rooms_r2_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.img_2 {
+    background-image: url(../IMG/PNG/rooms_r2_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+.img_3 {
+    background-image: url(../IMG/PNG/rooms_r2_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+.text_content h5 {
+    color: white;
+}
+
+.text_content_1 h5 {
+    color: white;
+}
+
+.text_content_2 h5 {
+    color: white;
+}
+
+.text_content span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_content_1 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_content_2 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_content p {
+    color: white;
+}
+
+.text_content {
+    padding: 10px;
+}
+
+.text_content_1 p {
+    color: white;
+}
+
+.text_content_1 {
+    padding: 10px;
+}
+
+.text_content_2 p {
+    color: white;
+}
+
+.text_content_2 {
+    padding: 10px;
+}
+
+.hover_content {
+    background-image: url(../IMG/PNG/hover_effect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: 0.8s;
+    bottom: -100%;
+}
+
+.hover_content_1 {
+    background-image: url(../IMG/PNG/hover_effect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: 0.8s;
+    bottom: -100%;
+}
+
+.hover_content_2 {
+    background-image: url(../IMG/PNG/hover_effect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: 0.8s;
+    bottom: -100%;
+}
+
+.text_area2 h5 {
+    color: white;
+}
+
+.text_area2 p {
+    color: white;
+}
+
+.text_area2 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_area2 button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.text_area2 {
+    padding: 10px;
+    padding-top: 35%;
+}
+
+.img_1:hover .hover_content {
+    /* opacity:1; */
+    bottom: 0%;
+    transition: 0.5s all ease;
+}
+
+.img_1:hover .text_content {
+    display: none;
+    transition: 0.8s all ease;
+}
+
+.text_content {
+    padding-top: 47%;
+}
+
+.img_2:hover .hover_content_1 {
+    /* opacity:1; */
+    bottom: 0%;
+    transition: 0.5s all ease;
+}
+
+.img_2:hover .text_content_1 {
+    display: none;
+    transition: 0.8s all ease;
+}
+
+.text_content_1 {
+    padding-top: 47%;
+}
+
+.img_3:hover .hover_content_2 {
+    /* opacity:1; */
+    bottom: 0%;
+    transition: 0.5s all ease;
+}
+
+.img_3:hover .text_content_2 {
+    display: none;
+    transition: 0.8s all ease;
+}
+
+.text_content_2 {
+    padding-top: 47%;
+}
+
+/*[section_2].........................*/
+
+.container_area {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row2_area_2 {
+    gap: 10px;
+}
+
+.img_4 {
+    background-image: url(../IMG/PNG/rooms_r2_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hover_content_3 {
+    background-image: url(../IMG/PNG/hover_effect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: 0.8s;
+    bottom: -65%;
+}
+
+.img_4:hover .hover_content_3 {
+    /* opacity:1; */
+    bottom: 0%;
+    transition: 0.8s all ease;
+}
+
+.img_4:hover .text_content_3 {
+    display: none;
+    transition: 0.8s all ease;
+}
+
+.text_content_3 {
+    padding: 10px;
+    padding-top: 32%;
+}
+
+.text_area3 h5 {
+    color: white;
+}
+
+.text_area3 p {
+    color: white;
+}
+
+.text_area3 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_area3 button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.text_area3 {
+    padding: 10px;
+    padding-top: 26%;
+}
+
+.text_content_3 p {
+    color: white;
+}
+
+.text_content_3 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_content_3 h5 {
+    color: white;
+}
+
+
+/*...................................*/
+
+
+.img_5 {
+    background-image: url(../IMG/PNG/rooms_r2_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.hover_content_4 {
+    background-image: url(../IMG/PNG/hover_effect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: 0.8s;
+    bottom: -65%;
+}
+
+.img_5:hover .hover_content_4 {
+    /* opacity:1; */
+    bottom: 0%;
+    transition: 0.8s all ease;
+}
+
+.img_5:hover .text_content_4 {
+    display: none;
+    transition: 0.8s all ease;
+}
+
+.text_content_4 {
+    padding: 10px;
+    padding-top: 32%;
+}
+
+.text_area4 h5 {
+    color: white;
+}
+
+.text_area4 p {
+    color: white;
+}
+
+.text_area4 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_area4 button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.text_area4 {
+    padding: 10px;
+    padding-top: 26%;
+}
+
+.text_content_4 p {
+    color: white;
+}
+
+.text_content_4 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_content_4 h5 {
+    color: white;
+}
+
+
+/*.[row2]..............................................*/
+
+.row_2 {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.first_row {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col_area{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius:10px;
+}
+
+.img_section img{
+    width: 100%;
+}

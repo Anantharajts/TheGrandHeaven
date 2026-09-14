@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/rooms.css" type="text/css">
+    <script src="assets/JS/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+
+
+    <div class="container-fluid menu_bg">
+
+        <!--[menu_area]........-->
+
+        <div class="container menu_area">
+            <div class="row menu_area_1">
+
+                <div class="col-2 logo">
+                    <img src="assets/IMG/PNG/logo_2 (2).png">
+                </div>
+
+                <div class="col row menu_con">
+
+                    <div class="col-8 row menu">
+
+                        <div class="col-2 menu_txt"><a href="#">Home</a>
+                        </div>
+                        <div class="col-2 menu_txt"><a href="#">Services</a>
+                        </div>
+                        <div class="col-2 rs"><a href="#">Rooms & Suite</a></div>
+                        <div class="col-2 menu_txt"><a href="#">News</a>
+                        </div>
+                        <div class="col-2 menu_txt"><select name="pages" id="pages_id">
+                                <option value="0">Pages</option>
+                                <option value="1"><a href="#">About</a></option>
+                                <option value="2"><a href="#">Contact Us</a></option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3 row menu_btn">
+
+                        <div class="col-4 btn"><a href="login.html"><button>Login</button></a>
+                        </div>
+                        <div class="col-4 btn"><a href="Registration.html"><button>SignUp</button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--[toggle area]....................................-->
+
+                <div class="col row toggle_area">
+                    <div class="col toggle">
+                        <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z"
+                                    fill="#000000"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--[toggle_menuarea].......................-->
+
+            <div class="col row toggle_menuarea">
+                <div class="col-12 tog"><a href="#">Home</a></div>
+                <div class="col-12 tog"><a href="#">Services</a></div>
+                <div class="col-12 tog"><a href="#">Rooms & Suite</a></div>
+                <div class="col-12 tog"><a href="#">News</a></div>
+                <div class="col-12 tog"><a href="#">About</a></div>
+                <div class="col-12 tog"><a href="#">Contact Us</a></div>
+                <div class="col-12 tog"><a href="login.html">Login</a></div>
+                <div class="col-12 tog"><a href="Registration.html">SignUp</a></div>
+            </div>
+
+        </div>
+
+
+
+        <!--[banner_section]..............................-->
+
+        <div class="container text_bg">
+
+            <div class="col row text_area">
+
+                <div class="col title">
+                    <!--[subheading]...............-->
+                    <h2 style="padding-bottom:0px;">ROOMS</h2>
+                    <span></span>
+                    <!--[subheading]...............-->
+
+                    <p>Experience spacious accommodations, premium comforts, and exceptional hospitality designed to
+                        make every night unforgettable.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--[row_1 (rooms check availability)].......................................-->
+
+    <div class="container rca_bg">
+
+        <div class="row rca_area">
+            <div class="row check_availability" style="gap: 10px;justify-content:center;align-items:center;">
+
+                <div class="col-3 row check" style="flex-direction: column;">
+                    <div class="col">
+                        <p>Check-In</p>
+                    </div>
+                    <div class="col row rca_1">
+                        <div class="col-2 svg_area">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M22 14V12C22 11.161 22 10.4153 21.9871 9.75H2.0129C2 10.4153 2 11.161 2 12V14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.8284C22 19.6569 22 17.7712 22 14Z"
+                                        fill="#CBAD8D"></path>
+                                    <path
+                                        d="M7.75 2.5C7.75 2.08579 7.41421 1.75 7 1.75C6.58579 1.75 6.25 2.08579 6.25 2.5V4.07926C4.81067 4.19451 3.86577 4.47737 3.17157 5.17157C2.47737 5.86577 2.19451 6.81067 2.07926 8.25H21.9207C21.8055 6.81067 21.5226 5.86577 20.8284 5.17157C20.1342 4.47737 19.1893 4.19451 17.75 4.07926V2.5C17.75 2.08579 17.4142 1.75 17 1.75C16.5858 1.75 16.25 2.08579 16.25 2.5V4.0129C15.5847 4 14.839 4 14 4H10C9.16097 4 8.41527 4 7.75 4.0129V2.5Z"
+                                        fill="#CBAD8D"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col in_put1">
+                            <input type="date" name="date" id="date_id">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-3 row check">
+                    <div class="col">
+                        <p>Check-Out</p>
+                    </div>
+                    <div class="col row rca_1">
+                        <div class="col-2 svg_area">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M22 14V12C22 11.161 22 10.4153 21.9871 9.75H2.0129C2 10.4153 2 11.161 2 12V14C2 17.7712 2 19.6569 3.17157 20.8284C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.8284C22 19.6569 22 17.7712 22 14Z"
+                                        fill="#CBAD8D"></path>
+                                    <path
+                                        d="M7.75 2.5C7.75 2.08579 7.41421 1.75 7 1.75C6.58579 1.75 6.25 2.08579 6.25 2.5V4.07926C4.81067 4.19451 3.86577 4.47737 3.17157 5.17157C2.47737 5.86577 2.19451 6.81067 2.07926 8.25H21.9207C21.8055 6.81067 21.5226 5.86577 20.8284 5.17157C20.1342 4.47737 19.1893 4.19451 17.75 4.07926V2.5C17.75 2.08579 17.4142 1.75 17 1.75C16.5858 1.75 16.25 2.08579 16.25 2.5V4.0129C15.5847 4 14.839 4 14 4H10C9.16097 4 8.41527 4 7.75 4.0129V2.5Z"
+                                        fill="#CBAD8D"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col in_put1">
+                            <input type="date" name="date_out" id="dateout_id">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 row check">
+                    <div class="col">
+                        <p style="margin-bottom: 3px;">Guests</p>
+                    </div>
+                    <div class="col row rca_1">
+                        <div class="col-2 svg_area">
+                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" style="width:100%;">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>users</title>
+                                    <desc>Created with sketchtool.</desc>
+                                    <g id="web-app" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="users" fill="#CBAD8D">
+                                            <path
+                                                d="M8,13 C6.34314575,13 5,11.6568542 5,10 C5,8.34314575 6.34314575,7 8,7 C9.65685425,7 11,8.34314575 11,10 C11,11.6568542 9.65685425,13 8,13 Z M16,13 C14.3431458,13 13,11.6568542 13,10 C13,8.34314575 14.3431458,7 16,7 C17.6568542,7 19,8.34314575 19,10 C19,11.6568542 17.6568542,13 16,13 Z M8,15 C10.3893851,15 12.5341111,16.0475098 14,17.7083512 C14,18.1839232 14,18.6144728 14,19 L2,19 C2,18.6144728 2,18.1839232 2,17.7083512 C3.46588891,16.0475098 5.61061495,15 8,15 Z M16,19 L16,16.9519717 L15.4994784,16.3848843 C15.1151403,15.949432 14.6965808,15.550843 14.2491048,15.1921858 C14.8126186,15.0663701 15.3985585,15 16,15 C18.3893851,15 20.5341111,16.0475098 22,17.7083512 L22,19 L16,19 Z"
+                                                id="Shape"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col row input_2">
+                            <div class="col in_put"><input type="number" name="room" id="room_id" placeholder="0 Rooms">
+                            </div>
+                            <div class="col in_put"><input type="number" name="adult" id="adult_id"
+                                    placeholder="0 Adult"></div>
+                            <div class="col in_put"><input type="number" name="child" id="child_id"
+                                    placeholder="0 Child"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 row check2">
+                    <div class="col S1_btn">
+                        <button>CHECK&nbsp;NOW</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="cl"></div>
+
+    </div>
+
+
+    <!--[row_2]..........................-->
+
+    <div class="container row_2_bg">
+
+        <div class="col row container_area">
+
+            <div class="col row row_2_area">
+
+                <!--....................-->
+
+                <div class="col img_1">
+                    <div class="col text_content">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Triple Room</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>$299/Night</p>
+                    </div>
+                    <div class="col hover_content">
+
+                        <div class="col text_area2">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Triple Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                            <p>$299/Night</p>
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--....................-->
+
+                <div class="col img_2">
+                    <div class="col text_content_1">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Double Room</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>$299/Night</p>
+                    </div>
+                    <div class="col hover_content_1">
+
+                        <div class="col text_area2">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Double Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                            <p>$299/Night</p>
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--....................-->
+
+
+                <div class="col img_3">
+                    <div class="col text_content_2">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>$299/Night</p>
+                    </div>
+                    <div class="col hover_content_2">
+
+                        <div class="col text_area2">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                            <p>$299/Night</p>
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--....................-->
+            </div>
+
+            <!--[section_2].......................-->
+
+            <div class="col row row2_area_2">
+
+                <!--........................-->
+                <div class="col img_4">
+                    <div class="col text_content_3">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>$299/Night</p>
+                    </div>
+                    <div class="col hover_content_3">
+
+                        <div class="col text_area3">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                            <p>$299/Night</p>
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!--........................-->
+
+                <div class="col img_5">
+                    <div class="col text_content_4">
+                        <!--[subheading]...............-->
+                        <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                        <span></span>
+                        <!--[subheading]...............-->
+
+                        <p>$299/Night</p>
+                    </div>
+                    <div class="col hover_content_4">
+
+                        <div class="col text_area4">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                            <p>$299/Night</p>
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <!--........................-->
+
+            </div>
+
+        </div>
+        <div class="cl"></div>
+    </div>
+
+    <!--[row_2].............................................-->
+
+    <div class="container row_2">
+        <div class="col">
+
+            <div class="col row first_row">
+                <!--.......................-->
+
+                <div class="col row col_area">
+                    <div class="col img_section"><img src="assets/IMG/PNG/rooms_r2_6.png"></div>
+                    <div class="col row text_section">
+                        <div class="col r_name">
+                            <!--[subheading]...............-->
+                            <h5 style="padding-bottom:0px;">Deluxe Room</h5>
+                            <span></span>
+                            <!--[subheading]...............-->
+                        </div>
+                        <div class="col r_price">
+                            <p>300/Night</p>
+                        </div>
+                    </div>
+                    <div class="col btn_area"><button></button></div>
+                </div>
+
+                <!--.......................-->
+            </div>
+            <div class="col row second_row"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
