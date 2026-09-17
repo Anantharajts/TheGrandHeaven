@@ -749,6 +749,10 @@ body {
         font-size: 10pt;
     }
 
+    .footer_inputarea svg {
+        width: 35%
+    }
+
 
 }
 

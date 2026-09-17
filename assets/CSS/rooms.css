@@ -398,11 +398,28 @@ body {
     color: white;
 }
 
+.text_area02 h5 {
+    color: white;
+}
+
 .text_area2 p {
     color: white;
 }
 
+.text_area02 p {
+    color: white;
+}
+
 .text_area2 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.text_area02 span {
     background-color: #CBAD8D;
     width: 90px;
     height: 2px;
@@ -418,9 +435,25 @@ body {
     color: white;
 }
 
+.text_area02 button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
 .text_area2 {
-    padding: 10px;
-    padding-top: 35%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.text_area02 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0%;
 }
 
 .img_1:hover .hover_content {
@@ -435,7 +468,8 @@ body {
 }
 
 .text_content {
-    padding-top: 47%;
+    position: absolute;
+    bottom: 0px;
 }
 
 .img_2:hover .hover_content_1 {
@@ -450,7 +484,8 @@ body {
 }
 
 .text_content_1 {
-    padding-top: 47%;
+    position: absolute;
+    bottom: 0px;
 }
 
 .img_3:hover .hover_content_2 {
@@ -465,7 +500,8 @@ body {
 }
 
 .text_content_2 {
-    padding-top: 47%;
+    position: absolute;
+    bottom: 0px;
 }
 
 /*[section_2].........................*/
@@ -473,6 +509,8 @@ body {
 .container_area {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .row2_area_2 {
@@ -492,6 +530,12 @@ body {
     overflow: hidden;
 }
 
+.text_content_3 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
 
 .hover_content_3 {
     background-image: url(../IMG/PNG/hover_effect.png);
@@ -504,7 +548,7 @@ body {
     position: relative;
     opacity: 1;
     transition: 0.8s;
-    bottom: -65%;
+    bottom: -100%;
 }
 
 .img_4:hover .hover_content_3 {
@@ -518,10 +562,6 @@ body {
     transition: 0.8s all ease;
 }
 
-.text_content_3 {
-    padding: 10px;
-    padding-top: 32%;
-}
 
 .text_area3 h5 {
     color: white;
@@ -548,9 +588,12 @@ body {
 }
 
 .text_area3 {
-    padding: 10px;
-    padding-top: 26%;
+    position: absolute;
+    bottom: 0%;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
+
 
 .text_content_3 p {
     color: white;
@@ -586,6 +629,13 @@ body {
     overflow: hidden;
 }
 
+.text_content_4 {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
 .hover_content_4 {
     background-image: url(../IMG/PNG/hover_effect.png);
     background-repeat: no-repeat;
@@ -597,7 +647,7 @@ body {
     position: relative;
     opacity: 1;
     transition: 0.8s;
-    bottom: -65%;
+    bottom: -100%;
 }
 
 .img_5:hover .hover_content_4 {
@@ -611,10 +661,10 @@ body {
     transition: 0.8s all ease;
 }
 
-.text_content_4 {
+/* .text_content_4 {
     padding: 10px;
     padding-top: 32%;
-}
+} */
 
 .text_area4 h5 {
     color: white;
@@ -641,8 +691,10 @@ body {
 }
 
 .text_area4 {
-    padding: 10px;
-    padding-top: 26%;
+    position: absolute;
+    bottom: 0%;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .text_content_4 p {
@@ -665,27 +717,644 @@ body {
 
 /*.[row2]..............................................*/
 
+.rows_section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .row_2 {
     margin-bottom: 80px;
     margin-top: 20px;
 }
 
 .first_row {
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
 
-.col_area{
+.col_area {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     padding: 10px;
     background-color: white;
-    border-radius:10px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.img_section img{
+.img_section img {
     width: 100%;
+}
+
+.text_section {
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.r_price {
+    text-align: right;
+}
+
+.r_name span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.r_price span {
+    color: #CBAD8D;
+}
+
+.btn_area button {
+    background-color: black;
+    padding: 5px 25px 5px 25px;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/*...........................................*/
+
+.second_row {
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.col_area_2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img_section_2 img {
+    width: 100%;
+}
+
+.text_section_2 {
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+
+.r_price_2 {
+    text-align: right;
+}
+
+.r_name_2 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.r_price_2 span {
+    color: #CBAD8D;
+}
+
+.btn_area_2 button {
+    background-color: black;
+    padding: 5px 25px 5px 25px;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*[footer]......................................*/
+
+.footer {
+    background-color: black;
+    height: 445px;
+    border-bottom: 30px solid #CBAD8D;
+}
+
+.footer_area {
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.f_side1 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.f_side1 p {
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.footer_inputarea {
+    background-color: #555555;
+    border-radius: 3px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.footer_inputarea input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #555555;
+    outline: none;
+}
+
+.footer_inputarea button {
+    background-color: #555555;
+    border: none;
+}
+
+.footer_inputarea svg {
+    width: 21%;
+    padding-top: 10px;
+    float: right;
+}
+
+.f_side1_se {
+    flex-direction: column;
+}
+
+.footer_icons {
+    gap: 10px;
+    width: 35%;
+    padding: 0px;
+}
+
+.sec_2 h2 {
+    color: white;
+}
+
+.sec_2 li {
+    color: white;
+}
+
+.sec_2_r1 p {
+    color: white;
+}
+
+
+
+/*[responsive section].......................................*/
+
+
+@media(max-width:1024px) {
+
+
+    /*[menu_area]...........................*/
+    .menu_area {
+        margin-top: 0px;
+    }
+
+    .menu_con {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .rs {
+        width: 22%;
+    }
+
+    .menu_btn {
+        gap: 48px;
+    }
+
+    /*[check availability]..........................*/
+
+    .in_put input {
+        border: none;
+        width: 125%;
+    }
+
+    .in_put1 input {
+        border: none;
+        width: 80%;
+    }
+
+    /*[row_1]......................*/
+
+    .text_area2 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_content_1 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_content_2 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area3 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_3 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+
+    .text_area4 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_4 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    /*[row_2]....................................*/
+
+    .r_name h5 {
+        font-size: 14px;
+    }
+
+    .r_price p {
+        font-size: 14px;
+    }
+
+
+    .r_name_2 h5 {
+        font-size: 14px;
+    }
+
+    .r_price_2 p {
+        font-size: 14px;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 413px;
+    }
+
+    .footer_icons {
+        width: 55%;
+    }
+
+    .f_side1 {
+        flex: 0.7;
+    }
+
+    .email_svg {
+        width: 32%;
+    }
+
+    .footer li {
+        font-size: 10pt;
+    }
+
+    .footer p {
+        font-size: 10pt;
+    }
+
+    .footer_inputarea svg {
+        width: 35%
+    }
+}
+
+@media(max-width:768px) {
+
+    .menu_con {
+        display: none;
+    }
+
+    .text_1 {
+        font-size: 33px !important;
+        width: none !important;
+    }
+
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 50px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 666px !important;
+    }
+
+    /*[banner]..................*/
+
+    .title {
+        padding-top: 42%;
+    }
+
+    /*[check availability]........................*/
+
+    /*..[SECTION-1]...........................*/
+
+    .check_availability {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding-right: 0px;
+    }
+
+    .check {
+        width: 100%;
+        border-bottom: 1px solid rgb(184, 184, 184);
+        padding: 0px;
+    }
+
+    .check2 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .check svg {
+        width: 55% !important;
+    }
+
+    .check input {
+        width: 100%;
+        outline: none;
+    }
+
+    .check2 button {
+        width: 100%;
+    }
+
+    /*[row_1].....................*/
+
+    .row_2_area {
+        display: grid;
+        gap: 10px;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_1 {
+        grid-column: span 2;
+    }
+
+    .text_content {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area2 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_area02 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_1 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+
+    .text_content_2 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area3 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_3 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area4 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_4 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+
+    /*[row_2].....................*/
+
+    .rows_section {
+        flex-direction: row;
+    }
+
+    .first_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .second_row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 691px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 35%;
+    }
+
+    .footer_inputarea {
+        width: 59%;
+    }
+
+}
+
+
+@media(max-width:425px) {
+
+    /*..[menu_area]...........................*/
+
+    .menu_con {
+        display: none;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .text_1 {
+        font-size: 21px;
+        width: 378px;
+    }
+
+    .text_p2 {
+        font-size: 12px;
+        width: 370px;
+    }
+
+    .toggle_area {
+        display: block;
+    }
+
+    .toggle svg {
+        width: 40px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto;
+    }
+
+    .menuarea_bg {
+        height: 550px;
+    }
+
+    /*[banner].................................*/
+
+    .title p {
+        color: white;
+        width: 84%;
+        font-size: 11pt;
+    }
+
+    .title {
+        padding-top: 77%;
+    }
+
+    /*..[row_1]...........................*/
+
+    .img_2 {
+        grid-column: span 2;
+    }
+
+    .img_3 {
+        grid-column: span 2;
+    }
+
+    .img_4 {
+        flex: 1 1 100%;
+    }
+
+    .text_content {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area2 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_1 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .text_area02 {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .text_content_2 {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    /*..[row_2]...........................*/
+
+    .rows_section {
+        flex-direction: column;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 780px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 60%;
+    }
+
+    .footer_inputarea {
+        width: 100%;
+    }
+
+    .footer p {
+        font-size: 8pt;
+    }
+
+
+
 }
