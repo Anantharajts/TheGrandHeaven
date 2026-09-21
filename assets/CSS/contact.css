@@ -21,17 +21,18 @@ p {
 }
 
 body {
-    background-color: #FAF7F2;
+    /* background-color: #FAF7F2; */
+    background-color: #f59d04;
 }
 
 /*....................................*/
 
 .menu_bg {
-    background-image: url('../IMG/PNG/new_bg.png');
+    background-image: url('../IMG/PNG/contact_bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    height:500px;
 }
 
 /*[menu]...........*/
