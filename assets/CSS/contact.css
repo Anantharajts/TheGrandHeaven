@@ -21,8 +21,7 @@ p {
 }
 
 body {
-    /* background-color: #FAF7F2; */
-    background-color: #f59d04;
+    background-color: #FAF7F2;
 }
 
 /*....................................*/
@@ -32,7 +31,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:500px;
+    height: 550px;
 }
 
 /*[menu]...........*/
@@ -162,4 +161,385 @@ body {
     display: inline-block;
     padding: 0px;
     margin-bottom: 16px;
+}
+
+
+/*[row_1].........................................*/
+
+.row_bg {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.row_1_area {
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.column_1 {
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input_1 input {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: rgb(211, 210, 210);
+    border-radius: 5px;
+}
+
+.input_1 textarea {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: rgb(211, 210, 210);
+    border-radius: 5px;
+    height: 100px;
+}
+
+.input_1 button {
+    border: none;
+    padding: 5px 25px 5px 25px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.title_1 {
+    margin-bottom: 30px;
+}
+
+.title_1 h5 {
+    font-size: 12;
+    color: black;
+}
+
+.title_1 span {
+    background-color: #CBAD8D;
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.input_1 {
+    padding: 0px;
+}
+
+/*...................*/
+
+/*[location_area]...............................................*/
+
+
+.location_area {
+    padding: 0px;
+}
+
+
+/*[footer]......................................*/
+
+.footer {
+    background-color: black;
+    height: 445px;
+    border-bottom: 30px solid #CBAD8D;
+}
+
+.footer_area {
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.f_side1 {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.f_side1 p {
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.footer_inputarea {
+    background-color: #555555;
+    border-radius: 3px;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.footer_inputarea input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #555555;
+    outline: none;
+}
+
+.footer_inputarea button {
+    background-color: #555555;
+    border: none;
+}
+
+.footer_inputarea svg {
+    width: 21%;
+    padding-top: 10px;
+    float: right;
+}
+
+.f_side1_se {
+    flex-direction: column;
+}
+
+.footer_icons {
+    gap: 10px;
+    width: 35%;
+    padding: 0px;
+}
+
+.sec_2 h2 {
+    color: white;
+}
+
+.sec_2 li {
+    color: white;
+}
+
+.sec_2_r1 p {
+    color: white;
+}
+
+
+
+
+/*[responsive section]....................................................*/
+
+
+@media(max-width:1024px) {
+
+    /*[menu_area]...........................*/
+    .menu_area {
+        margin-top: 0px;
+    }
+
+    .menu_con {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .rs {
+        width: 22%;
+    }
+
+    .menu_btn {
+        gap: 48px;
+    }
+
+    /*[banner].......................................*/
+
+    .title {
+        padding-top: 35%;
+    }
+
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 413px;
+    }
+
+    .footer_icons {
+        width: 55%;
+    }
+
+    .f_side1 {
+        flex: 0.7;
+    }
+
+    .email_svg {
+        width: 32%;
+    }
+
+    .footer li {
+        font-size: 10pt;
+    }
+
+    .footer p {
+        font-size: 10pt;
+    }
+
+    .footer_inputarea svg {
+        width: 35%
+    }
+}
+
+@media(max-width:768px) {
+
+    .menu_con {
+        display: none;
+    }
+
+    .text_1 {
+        font-size: 33px !important;
+        width: none !important;
+    }
+
+    .toggle_area {
+        display: block !important;
+    }
+
+    .toggle svg {
+        width: 50px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto !important;
+    }
+
+    .menuarea_bg {
+        height: 666px !important;
+    }
+
+    /*[banner]..................*/
+
+    .title {
+        padding-top: 42%;
+    }
+
+
+    /*[row_1].........................................*/
+
+    .row_1_area {
+        flex-direction: column;
+    }
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 691px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 35%;
+    }
+
+    .footer_inputarea {
+        width: 59%;
+    }
+
+}
+
+
+@media(max-width:425px) {
+    /*..[menu_area]...........................*/
+
+    .menu_con {
+        display: none;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .text_1 {
+        font-size: 21px;
+        width: 378px;
+    }
+
+    .text_p2 {
+        font-size: 12px;
+        width: 370px;
+    }
+
+    .toggle_area {
+        display: block;
+    }
+
+    .toggle svg {
+        width: 40px;
+        float: right;
+        padding-right: 2px;
+    }
+
+    .toggle_menuarea a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu_area {
+        height: auto;
+    }
+
+    .menuarea_bg {
+        height: 550px;
+    }
+
+    /*[banner].................................*/
+
+    .title p {
+        color: white;
+        width: 84%;
+        font-size: 11pt;
+    }
+
+    .title {
+        padding-top: 77%;
+    }
+
+    /*[row_1]...............................*/
+
+
+
+    /*..[footer]...........................*/
+
+    .footer {
+        height: 780px;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer_icons {
+        width: 60%;
+    }
+
+    .footer_inputarea {
+        width: 100%;
+    }
+
+    .footer p {  
+        font-size: 8pt;
+    }
+
 }
