@@ -423,6 +423,10 @@
         height: 550px !important;
     }
 
+    .menu_area_ju{
+        margin-top: 60px !important;
+    }
+
     /*..[SECTION-1]...........................*/
 
     .check2 {
@@ -442,6 +446,7 @@
 
     .s2_area {
         flex-direction: column !important;
+        padding: 0px 15px !important;
     }
 
     .s2_row_img1 img {
@@ -516,6 +521,10 @@
 
     .s3_p {
         margin-left: 17px !important;
+    }
+
+    .tt_icon{
+        padding:0px !important;
     }
 
     /*..[SECTION-4]...........................*/
@@ -604,6 +613,16 @@
 
     .s10_1 {
         display: none !important;
+    }
+    .input_section1{
+        flex-direction: column !important;
+    }
+    .input_section2{
+        flex-direction: column !important;
+    }
+
+    .input_section_bg{
+        height: 517px !important;
     }
 
     /*..[SECTION-11]...........................*/

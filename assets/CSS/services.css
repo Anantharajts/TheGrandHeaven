@@ -518,10 +518,14 @@ body {
         height: 550px !important;
     }
 
+    .menu_bg {
+        height: 451px;
+    }
+
     /*[banner].......................................*/
 
     .title {
-        padding-top: 52%;
+        padding-top: 29%;
     }
 
     .title p {

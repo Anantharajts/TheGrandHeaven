@@ -1275,6 +1275,10 @@ body {
         height: 550px;
     }
 
+    .menu_bg {
+        height: 456px;
+    }
+
     /*[banner].................................*/
 
     .title p {
@@ -1284,7 +1288,7 @@ body {
     }
 
     .title {
-        padding-top: 77%;
+        padding-top: 38%;
     }
 
     /*..[row_1]...........................*/

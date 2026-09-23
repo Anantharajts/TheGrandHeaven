@@ -503,6 +503,10 @@ body {
         height: 550px;
     }
 
+    .menu_bg {
+        height: 365px;
+    }
+
     /*[banner].................................*/
 
     .title p {
@@ -512,12 +516,15 @@ body {
     }
 
     .title {
-        padding-top: 77%;
+        padding-top: 38%;
     }
 
     /*[row_1]...............................*/
 
-
+.input_1{
+    flex-direction: column;
+    gap: 20px;
+}
 
     /*..[footer]...........................*/
 
@@ -538,7 +545,7 @@ body {
         width: 100%;
     }
 
-    .footer p {  
+    .footer p {
         font-size: 8pt;
     }
 
