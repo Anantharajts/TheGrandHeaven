@@ -1262,6 +1262,11 @@ body {
         padding-right: 2px;
     }
 
+    .toggle_menuarea {
+        width: 104%;
+        left: 0%;
+    }
+
     .toggle_menuarea a {
         text-decoration: none;
         color: black;

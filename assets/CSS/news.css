@@ -569,6 +569,11 @@ body {
         height: auto;
     }
 
+    .toggle_menuarea {
+        width: 104%;
+        left: 0%;
+    }
+
     .menuarea_bg {
         height: 550px;
     }
