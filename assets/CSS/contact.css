@@ -521,10 +521,10 @@ body {
 
     /*[row_1]...............................*/
 
-.input_1{
-    flex-direction: column;
-    gap: 20px;
-}
+    .input_1 {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     /*..[footer]...........................*/
 
