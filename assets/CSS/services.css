@@ -56,7 +56,13 @@ body {
 }
 
 .logo {
-    padding-left: 34px;
+
+    padding-left: 20px;
+
+}
+
+.logo img {
+    width: 30%;
 }
 
 .menu_con {
@@ -393,6 +399,10 @@ body {
         display: none;
     }
 
+    .logo img {
+        width: 60%;
+    }
+
     .text_1 {
         font-size: 33px !important;
         width: none !important;
@@ -482,7 +492,7 @@ body {
     }
 
     .logo img {
-        width: 100px !important;
+        width: 50px !important;
     }
 
     .text_1 {

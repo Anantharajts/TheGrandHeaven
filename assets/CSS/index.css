@@ -137,6 +137,10 @@
         display: none;
     }
 
+    .logo img{
+        width: 60% !important;
+    }
+
     .text_1 {
         font-size: 33px !important;
         width: none !important;
@@ -387,7 +391,7 @@
     }
 
     .logo img {
-        width: 100px !important;
+        width: 50px !important;
     }
 
     .text_1 {
